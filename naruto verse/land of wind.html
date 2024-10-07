@@ -1,0 +1,628 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="icon" href="00symbol\Nland of wind.png">
+        <link rel="stylesheet" type="text/css" href="0cssJava\alllands.css">
+        <title>
+            land of wind
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <style>
+    body{
+        background-image:url("land of wind.webp")
+    }
+
+    .landmenu{
+        box-shadow:rgb(44, 145, 78) 2px 2px 10px;
+    }
+
+
+    .landmem ::-webkit-scrollbar{
+    background-color: rgb(177, 233, 199);
+    border-radius: 18px;
+  }
+
+  .landmem  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  
+  
+  }
+   
+  
+  .landmem  ::-webkit-scrollbar-thumb {
+    background: rgba(12, 145, 78, 0.842);
+    border-radius: 6px;
+  
+  }
+
+
+    .nameOfLand{
+        color:rgb(27, 107, 74);
+    }
+
+
+    .map{
+        box-shadow:rgb(24, 133, 97) 1px 1px 8px;
+    }
+
+    .smallsizesearch{
+        box-shadow:rgb(24, 133, 91) 2px 2px 10px;
+    }
+
+
+    .characterlistA{
+        background-color:rgb(4, 139, 4);
+    }
+
+    .imageH4{
+        color:rgb(0, 139, 69);
+    }
+
+    .introinfo p{
+        color: rgb(28, 177, 90);
+    }
+
+    .secondpage{
+        background-image:url('land of wind hidden sand village.webp');
+    }
+
+
+    .hiddenvillagewrap{
+        box-shadow:rgb(24, 133, 91) 2px 2px 8px;
+    }
+
+    .hiddenvillagep{
+        color:rgb(9, 131, 35);
+    }
+
+
+    .thirdpageline, .thirdpagetitle{
+        background-color: rgb(2, 102, 52);
+    }
+
+    .clansbutton{
+        background-color:rgba(0, 255, 136, 0.452);
+    }
+
+        .slideimagename span:hover{
+        box-shadow: 1px 1px 9px green;
+    }
+    
+    .slideimagename span a{
+        color: rgb(0, 255, 115);
+    }
+
+
+    #buttonssenju{
+        background-size: 80px;
+        height:70px;
+        width:140px;
+    }
+
+    #buttonsuchiha{
+        background-size: 40px;
+    }
+
+    #buttonsharuno{
+        background-size: 42px;
+    }
+
+    #buttonskurama{
+        background-size: 25px;
+    }
+
+
+    @media  screen and (max-width: 482px) {
+        #buttonssenju{
+            width: 100px;
+            background-size: 60px;
+            height:50px;
+        }
+
+        #buttonsuchiha{
+            background-size: 25px;
+        }
+
+        #buttonsharuno{
+            background-size: 32px;
+        }
+
+        #buttonskurama{
+            background-size: 20px;
+        }
+    }
+
+
+
+
+    </style>
+
+</head>
+
+
+    <!-- menu or header-->
+    <body class="" id="js">
+
+        <div id="landmenu" class="landmenu">
+            <div draggable="false" class="nameOfLand">
+                <img  class="nameOfLandimg" draggable="false"   src="00symbol\Nland of wind.png">
+                <span class="landnamespan">
+                    <a id="landname">LAND OF WIND</a>
+                </span>
+            </div>
+        
+            <iframe  class="LobjectFrame" frameborder="0" scrolling="no" src="0search\search.html"></iframe>
+
+            <a href="shinobi world map.html"><img draggable="false"  class="map" src="00symbol\map.jpg"></a>
+        <!-- <img class="hidden" draggable="false" src="00symbol\hiddenlines.png"> -->
+        </div>
+        <!-- cover that triggers the removal of the character list -->
+        <div id="iframecover"  class="iframecover"></div>
+
+
+        <div class="smallsizesearch">
+            <iframe frameborder="0" scrolling="no" src="0search\search.html"></iframe>
+        </div>
+
+
+        <!-- list of character to be displayed -->
+        <div class="characterdisplay">
+            <!-- start -->
+            <!-- character triggrer -->
+            <div id="characterlistAOcontainer">
+                <div class="characterlistO" id="characterlistAO"></div>
+            </div>
+
+
+            <!--
+            |
+            linked
+            |
+            -->
+            <!-- list of character -->
+            <div  class="characterposition">
+            <div  id="characterlist" class="landmem" >
+
+            <a id="characterlistAC"><h1 class="characterlistA" >X</h1></a>
+            <button  class="titlecharacterlist"><h3>Citizens of the Land (dead or alive)</h3></button>
+            <br>
+            <div  class="listofcharacterwrap">
+
+                <a href="#third kazekage.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Third kazekage" class="imageId" src="idsImg\third kazekage.jpg">
+                      <H4 class="imageH4">Third kazekage</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#abiru.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Abiru" class="imageId" src="idsImg\abiru.jpg">
+                      <H4 class="imageH4">Abiru</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#ameno.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Ameno" class="imageId" src="idsImg\ameno.jpg">
+                      <H4 class="imageH4">Ameno</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#araya.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Araya" class="imageId" src="idsImg\araya.jpg">
+                      <H4 class="imageH4">Araya</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#baki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Baki" class="imageId" src="idsImg\baki.jpg">
+                      <H4 class="imageH4">Baki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#bunpuku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Bunpuku" class="imageId" src="idsImg\bunpuku.jpg">
+                      <H4 class="imageH4">Bunpuku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#chiyo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Chiyo" class="imageId" src="idsImg\chiyo.jpg">
+                      <H4 class="imageH4">Chiyo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#daimaru.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Daimaru" class="imageId" src="idsImg\daimaru.jpg">
+                      <H4 class="imageH4">Daimaru</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#datsuji.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Datsuji" class="imageId" src="idsImg\datsuji.jpg">
+                      <H4 class="imageH4">Datsuji</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#ebizo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Ebizo" class="imageId" src="idsImg\ebizo.jpg">
+                      <H4 class="imageH4">Ebizo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#fugi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Fugi" class="imageId" src="idsImg\fugi.jpg">
+                      <H4 class="imageH4">Fugi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#gaara.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Gaara" class="imageId" src="idsImg\gaara.jpg">
+                      <H4 class="imageH4">Gaara</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#goji.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Goji" class="imageId" src="idsImg\goji.jpg">
+                      <H4 class="imageH4">Goji</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hoichi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Hoichi" class="imageId" src="idsImg\hoichi.jpg">
+                      <H4 class="imageH4">Hoichi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kankuro.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Kankuro" class="imageId" src="idsImg\kankuro.jpg">
+                      <H4 class="imageH4">Kankuro</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#karura.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Karura" class="imageId" src="idsImg\karura.jpg">
+                      <H4 class="imageH4">Karura</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kashike.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Kashike" class="imageId" src="idsImg\kashike.jpg">
+                      <H4 class="imageH4">Kashike</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#koji.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Koji (suna)" class="imageId" src="idsImg\koji suna.jpg">
+                      <H4 class="imageH4">Koji (Suna)</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#komaza.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Komaza" class="imageId" src="idsImg\komaza.jpg">
+                      <H4 class="imageH4">Komaza</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#komushi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Komushi" class="imageId" src="idsImg\komushi.jpg">
+                      <H4 class="imageH4">Komushi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#korobi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Korobi" class="imageId" src="idsImg\korobi.jpg">
+                      <H4 class="imageH4">Korobi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#maki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Maki" class="imageId" src="idsImg\maki.jpg">
+                      <H4 class="imageH4">Maki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mamushi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Mamushi" class="imageId" src="idsImg\mamushi.jpg">
+                      <H4 class="imageH4">Mamushi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#matsuri.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Matsuri" class="imageId" src="idsImg\matsuri.jpg">
+                      <H4 class="imageH4">Matsuri</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mijin.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Mijin" class="imageId" src="idsImg\mijin.jpg">
+                      <H4 class="imageH4">Mijin</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mikoshi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Mikoshi" class="imageId" src="idsImg\mikoshi.jpg">
+                      <H4 class="imageH4">Mikoshi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mujin.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Mujin" class="imageId" src="idsImg\mujin.jpg">
+                      <H4 class="imageH4">Mujin</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nejiri.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Nejiri" class="imageId" src="idsImg\nejiri.jpg">
+                      <H4 class="imageH4">Nejiri</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nonota.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Nonota" class="imageId" src="idsImg\nonota.jpg">
+                      <H4 class="imageH4">Nonota</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#pakura.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Pakura" class="imageId" src="idsImg\pakura.jpg">
+                      <H4 class="imageH4">Pakura</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#rasa.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Rasa" class="imageId" src="idsImg\rasa.jpg">
+                      <H4 class="imageH4">Rasa</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#reto.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Reto" class="imageId" src="idsImg\reto.jpg">
+                      <H4 class="imageH4">Reto</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sajin.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Sajin" class="imageId" src="idsImg\sajin.jpg">
+                      <H4 class="imageH4">Sajin</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sana.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Sana" class="imageId" src="idsImg\sana.jpg">
+                      <H4 class="imageH4">Sana</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sari.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Sari" class="imageId" src="idsImg\sari.jpg">
+                      <H4 class="imageH4">Sari</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sasori.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Sasori" class="imageId" src="idsImg\sasori.jpg">
+                      <H4 class="imageH4">Sasori</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sasori parents.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Sasori parents" class="imageId" src="idsImg\sasori parents.jpg">
+                      <H4 class="imageH4">Sasori's parents</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#saya.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Saya" class="imageId" src="idsImg\saya.jpg">
+                      <H4 class="imageH4">Saya</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sen.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Sen" class="imageId" src="idsImg\sen.jpg">
+                      <H4 class="imageH4">Sen</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shamon.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Shamon" class="imageId" src="idsImg\shamon.jpg">
+                      <H4 class="imageH4">Shamon</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shinki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Shinki" class="imageId" src="idsImg\shinki.jpg">
+                      <H4 class="imageH4">Shinki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shira.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Shira" class="imageId" src="idsImg\shira.jpg">
+                      <H4 class="imageH4">Shira</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shishio.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Shishio" class="imageId" src="idsImg\shishio.jpg">
+                      <H4 class="imageH4">Shishio</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#team goji leader.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Team goji leader" class="imageId" src="idsImg\team goji leader.jpg">
+                      <H4 class="imageH4">Team goji leader</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara temari.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Temari" class="imageId" src="idsImg\nara temari.jpg">
+                      <H4 class="imageH4">Temari Nara</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tomari.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Tomari" class="imageId" src="idsImg\tomari.jpg">
+                      <H4 class="imageH4">Tomari</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tsuchino.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Tsuchino" class="imageId" src="idsImg\tsuchino.jpg">
+                      <H4 class="imageH4">Tsuchino</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yaoki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Yaoki" class="imageId" src="idsImg\yaoki.jpg">
+                      <H4 class="imageH4">Yaoki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yashamaru.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Yashamaru" class="imageId" src="idsImg\yashamaru.jpg">
+                      <H4 class="imageH4">Yashamaru</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yodo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Yodo" class="imageId" src="idsImg\yodo.jpg">
+                      <H4 class="imageH4">Yodo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yome.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Yome" class="imageId" src="idsImg\yome.jpg">
+                      <H4 class="imageH4">Yome</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yukata.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Yukata" class="imageId" src="idsImg\yukata.jpg">
+                      <H4 class="imageH4">Yukata</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yura.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img title="Yura" class="imageId" src="idsImg\yura.jpg">
+                      <H4 class="imageH4">Yura</h4>
+                    </div>
+                  </a>
+            </div></div>
+            </div>
+        </div>
+        <!-- end -->
+
+
+                <div id="searcherror">
+            <p><h2 id="negativedisplay"></h2></p>
+               </div>
+
+        <!-- land info -->
+        <div class="firstpage">
+            <div class="introinfo">
+                <p class="introinfoP">
+                    The Land of Wind is a vast land consisting of mostly desert, due to little rain fall. The Land of wind shares border with the <a href="land of fire.html#hidden leaf">land of fire</a>. The head of the land of wind is the feudal lord of the land. The land of wind is also considered part of the 5 great nations because of it vast land and shinobi village.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- the hidden village-->
+        <div class="secondpage">
+            <div class="hiddenvillagewrap">
+            <p class="hiddenvillagep">
+                <img src="00symbol/Nhidden sand village.png" style="width: 35px;">             The hidden sand is a village within the land of wind and home to the nation's shinobi. The head of the hidden sand village is called the Kazekage. The villages first kazekage was <a href="#reto.html">Reto</a> and the village is currently at it 5th kazekage, <a href="#gaara.html">Gaara</a>. Within the years the hidden sand and the <a href="land of fire.html#hidden leaf">hidden leaf village</a> have had great partnership. Even after the <a href="4th great ninja war.html">4th great ninja war</a>. THe village has always possessed the one tailed beast shukaku since the time of the first kazekake.
+            </p>
+        </div>
+
+        </div>
+        
+        <div class="thirdpage1">
+            <div class="thirdpageline"></div>
+            <div class="thirdpagetitle">
+                <p>Clans</p>
+            </div> 
+
+            <div class="noclan1">
+                <p class="hiddenvillagep1">
+                  Unfortunately nothing is known of the clans in this village.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="pcontainer">
+                <p> I can creat a simple website like this and send the codes to you. 
+                    I can help you with image editing and video subtitling.</p>
+            </div>
+
+            <div class="icon" >
+                <img src="00symbol/upwork.png">
+                <img src="00symbol/peopleperhour.png">
+            </div>
+
+            <div class="footercopyright">
+                <hr>
+                <p >@ all right reserved to the author Basade</p>
+            </div>
+        </div>
+<script src="0cssJava\test.js" defer></script>
+</body>
+
+</html>

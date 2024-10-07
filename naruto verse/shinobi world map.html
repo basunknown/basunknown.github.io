@@ -1,0 +1,360 @@
+<!DOCTYPE html><html>
+    <head>
+        <title>
+            shinobi world map
+        </title>
+        
+        <script src="0cssJava\allsearchesM.js" defer></script>
+        <link rel="icon" href="00symbol\map.png">
+        <link rel="stylesheet" type="text/css" href="0cssJava\allsearchesM.css">
+        <meta name="viewport" content="width=device-width, initial-scale=01">
+
+    <!-- <script src="0cssJava\mapsearch.js" defer></script> -->
+
+
+
+<style>
+
+::-webkit-scrollbar{
+    background-color: rgba(192, 159, 97, 0.5);
+    border-radius: 18px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  
+  
+  }
+   
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(161, 106, 4, 0.671);
+    border-radius: 6px;
+  
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5f5f5f; 
+  }
+  
+  body{
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    background-color:rgb(32, 32, 32);
+    user-select: none;
+   }
+
+   /* .LobjectFrame{
+    position: absolute; */
+    /* left:42%; */
+     /* margin: auto;
+    display: block; */
+    /* background-color: black;
+    width:205px;
+    height:35px;}
+
+    .LobjectFrame:hover{
+      height: fit-content;
+    } */
+
+    .mapmenu{
+      position: relative; z-index:1; display: block; margin: auto;  text-align: center; box-shadow: 1px 1px 12px black; background-color:rgb(224, 97, 50);  width:1602px;  height:100%; min-height: 84px;
+    }
+
+    .mapmenup{
+     color:darkblue; display: block; margin: auto; padding:1%; font-family: sans-serif;  font-size:35px;
+    }
+
+    .line{
+      width:100%; min-width:1602px;  position:absolute; background-color:white; text-align:center; height:27px; z-index: 1; box-shadow:1px 1px 12px;
+    }
+
+    .searchcontainer{
+      margin:auto;
+      position: fixed;
+      left:5%;
+      top:104px;
+      display: block;
+      width: 205px; 
+      height:35px;
+      z-index: 1;
+    }
+
+    .searchbox{
+      position: absolute; opacity:40%; margin:auto; display: block;
+      transition: 0.4s;
+    }
+
+    .searchbox:hover {
+      opacity:100%;
+    }
+
+
+    #searcherror{
+    background-color: aliceblue;
+    box-shadow: 0px 0px 8px;
+position:fixed;
+display: none;
+justify-content: center;
+align-items: center;
+height: 200px;
+width:55%;
+top:19%;
+left: 0px;
+right:0px;
+ z-index: 2; 
+ margin:auto;
+}
+
+
+
+
+
+  .iframehere{
+    display: block;
+    /* width:100%; */
+    margin:auto;
+    min-width:1600px;
+    height:905px;
+    background-color: black;
+    
+
+
+  }
+
+  iframe::-webkit-scrollbar { display: none; }
+
+
+  /* .LobjectFrame{
+    position:absolute;
+    background-color: yellow;
+    top: 42px; 
+    left:667px;
+    height: auto;
+    width:203px;
+    border-radius: 16px 14px 3px 2px;
+    } */
+
+
+    .footer{
+            position: static;
+            display: block;
+            margin:auto;
+            min-height: 175px;
+            width:1602px;
+            font-size:12px;
+            color: antiquewhite;
+            /* display:block; */
+            padding-top: 8%;
+            padding-bottom:0%;
+            height:100%;
+            background-color:rgb(32, 32, 32);
+        }
+
+
+        .pcontainer{
+            display:block; margin:auto;  width:40%;
+        }
+
+
+          .pcontainer p{
+            text-align: justify;
+           }
+
+                    .icon{
+                        width:119px;
+                        height: 54px;
+                        display:block;
+                        margin:auto;
+                    }
+
+                    .icon img{
+                        width:30px;
+                    }
+
+        .footercopyright{
+            display:block;
+            margin:auto;
+            position:relative;
+            top:2%;
+        }
+
+       hr{
+        width:40%;
+        border: solid gray 0.1px;
+       }
+
+       .footercopyright p{
+        text-align: center;
+       }
+
+       
+.slideshow{
+  display: flex; background-color:rgb(32, 32, 32); margin:auto; width:1602px; overflow: hidden;
+}
+
+
+.slide{
+    height:210px; 
+    display: block;
+    animation:slide 16s linear infinite;
+}
+
+.slide1{
+    height:210px;
+    display: block;
+    animation:slide 16s linear infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(0%);
+  }
+
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+       /* @media screen and (max-width:1100px) {
+        body{zoom:150%;}
+       }*/
+
+               /* min-width:225px;
+        width:100%; */
+       @media screen and (max-device-width:940px) {
+
+       .line{
+        min-width:225px;
+        width:100%;
+       
+      }
+      .searchcontainer{
+        top:184px;
+      }
+
+       .iframehere{
+        min-width:225px;
+        width:100%;
+        height: 900px;
+       }
+     
+
+
+       .mapmenu,.slideshow,.footer{  min-width:225px;
+       width:100%;}
+      
+      }
+
+
+
+       @media screen and (max-device-width:700px) {
+       .iframehere{
+        height: 700px;
+       }
+
+       .mapmenu,.slideshow,.footer{  min-width:225px;
+       width:100%;}
+      
+      
+       } 
+
+
+
+
+
+</style>
+
+</head>
+
+
+<body id="js" style="background-color: grey;">
+
+
+            <div class="mapmenu">
+                <P class="mapmenup"> Map of The 5 Great Nations and various Hidden Villages</p>
+
+                  <!-- <div style="width: 100%;">
+                    <iframe  allow="autoplay"  name="thisiframe" class="LobjectFrame" frameborder="0" scrolling="no" src="0search\search.html"></iframe>
+                    </div> -->
+
+                    <div class="line"></div>
+                    </div>
+
+
+                    <div class="searchcontainer">
+                      <input type="search" class="searchbox" placeholder="   Search clan and land..."  autocomplete="off" id="searchbox">
+                      <div id="divdatalist">
+                          <li class="optionlist"  value="inuzuka">Inuzuka</li>
+                          <li class="optionlist"  value="kurama">Kurama</li>
+                          <li class="optionlist"  value="Hatake">Hatake</li>
+                          <li class="optionlist"  value="yamanaka">Yamanaka</li>
+                          <li class="optionlist"  value="Haruno">Haruno</li>
+                          <li class="optionlist"  value="akimichi">Akimichi</li>
+                          <li class="optionlist"  value="aburame">Aburame</li>
+                          <li class="optionlist"  value="nara">Nara</li>
+                          <li class="optionlist"  value="sarutobi">Sarutobi</li>
+                          <li class="optionlist"  value="uzumaki">Uzumaki</li>
+                          <li class="optionlist"  value="hyuga">Hyuga</li>
+                          <li class="optionlist"  value="senju">Senju</li>
+                          <li class="optionlist"  value="uchiha">Uchiha</li>
+                          <li class="optionlist"  value="kohaku">Kohaku</li>
+                          <li class="optionlist"  value="shimura">Shimura</li>
+                          <li class="optionlist"  value="kamizuru">Kamizuru</li>
+                          <li class="optionlist"  value="chinoike">Chinoike</li>
+                          <li class="optionlist"  value="yotsuki">Yotsuki</li>
+                          <li class="optionlist"  value="hozuki">Hozuki</li>
+                          <li class="optionlist"  value="hoshigaki">Hoshigaki</li>
+                          <li class="optionlist"  value="yuki">Yuki</li>
+                          <li class="optionlist"  value="karatachi">Karatachi</li>
+                          <li class="optionlist"  value="hidden grass village">Hidden Grass Village</li>
+                          <li class="optionlist"  value="hidden rain village">Hidden Rain Village</li>
+                          <li class="optionlist"  value="hidden waterfall village">Hidden Waterfall Village</li>
+                          <li class="optionlist"  value="land of earth">Land Of Earth</li>
+                          <li class="optionlist"  value="land of fire">Land Of Fire</li>
+                          <li class="optionlist"  value="land of hot water">Land Of Hot Water</li>
+                          <li class="optionlist"  value="land of lightning">Land Of Lightning</li>
+                          <li class="optionlist"  value="land of sound">Land Of Sound</li>
+                          <li class="optionlist"  value="land of water">Land Of Water</li>
+                          <li class="optionlist"  value="land of wind">Land Of Wind</li>
+                          <li class="optionlist"  value="shinobi world map">Shinobi World Map</li>
+                      </div>
+                      </div>
+
+
+                      <div id="searcherror">
+                        <p><h2 id="negativedisplay"></h2></p>
+                           </div>
+
+
+<iframe class="iframehere" src="map.html">
+</iframe>
+
+<div class="slideshow">
+    <img class="slide" src="listofpics.webp">
+   <img class="slide1" src="listofpics.webp">
+</div>
+
+
+    
+        <div class="footer">
+
+            <div class="pcontainer">
+                <p>
+                I can creat a simple website like this and send the codes to you. I can help you with image editing and video subtitling.
+            </p>
+            </div>
+        
+                <div class="icon" >
+                <img src="00symbol/upwork.png">
+                <img src="00symbol/peopleperhour.png">
+                </div>
+                
+                <div class="footercopyright">
+                <hr>
+                <p >@ all right reserved to the author Basade</p>
+        </div>
+           </div>
+           
+           </body>
+           </html>
