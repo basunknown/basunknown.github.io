@@ -11,8 +11,19 @@
     
 
     <style>
-    body{
-        background-image:url("Land of Fire.webp")
+.wallpaper{
+      background-image: url('Land of Fire.webp');
+  background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    z-index: -2;
+ width:100%;
+ height: 100%;
+ background-position-y:4px ;
+ position:fixed;
+ scroll-behavior: smooth;
+ 
     }
 
     .landmenu{
@@ -67,6 +78,7 @@
 
     .secondpage{
         background-image:url('landoffirehiddenleaf.webp');
+        /* background-color: red; */
     }
 
 
@@ -149,7 +161,7 @@
 
     <!-- menu or header-->
     <body class="" id="js">
-
+<div class="wallpaper"></div>
         <div id="landmenu" class="landmenu">
             <div draggable="false" class="nameOfLand">
                 <img  class="nameOfLandimg" draggable="false"   src="00symbol\Nland of fire.png">
@@ -1837,7 +1849,7 @@
             </div>
             <div class="slideimages" style="background-image:url('clandisplay/akimichi.webp');" >
                 <p class="slideimagename">
-                    <span class="clanname"><a href="akimich.html">Akimichi Clan
+                    <span class="clanname"><a href="akimichi.html">Akimichi Clan
 
                     </a></span>
                 </p>
@@ -1879,7 +1891,7 @@
             </div>
             <div class="slideimages" style="background-image:url('clandisplay/uchiha.webp');" >
                 <p class="slideimagename">
-                    <span class="clanname"><a href="Uchiha.html">Uchiha Clan
+                    <span class="clanname"><a href="uchiha.html">Uchiha Clan
 
                     </a></span>
                 </p>
