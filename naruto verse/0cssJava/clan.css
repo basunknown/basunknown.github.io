@@ -1,0 +1,543 @@
+html{
+  overflow:hidden;
+  animation:removescroll 2s ;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes removescroll{
+to{
+  overflow:auto;
+}
+}
+
+
+::-webkit-scrollbar{
+  background-color: rgba(82, 82, 82, 0.678);
+  border-radius: 18px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(94, 93, 93, 0.726);
+  border-radius: 18px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5f5f5f; 
+}
+
+
+body{
+  margin:0px; 
+  user-select: none;
+  width: 100%;
+  /* width:100vm;  */
+  background-color: black;
+  
+  /* overflow-x: ; */
+  user-select: none;
+  }
+  
+
+.gate{
+ 
+   width: 100%; height: 100vh; 
+  display:inline-flex; position: fixed; top:0px; z-index: 1;
+   animation:gate 6s linear;
+   animation-fill-mode: forwards;
+   z-index: 2;
+}
+
+@keyframes gate{
+
+to{
+  display: none;
+pointer-events: none;
+}
+}
+
+.gate img{
+  height:160%;
+  width:50%;
+  position: absolute;
+}
+
+.door1{
+  animation: open1 2s linear;
+  background-color: rgba(240, 247, 180, 0.671);
+  /* animation-fill-mode: forwards; */
+  left:0px;
+  animation-delay: 2s;
+  ;
+  animation-fill-mode: forwards;
+}
+
+
+.door2{
+  animation: open2 2s linear;
+  background-color: rgba(230, 240, 207, 0.438);  /* animation-fill-mode: forwards; */
+  right: 0px;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+
+@keyframes open1{
+
+  to{
+left:-100%;
+
+  }
+}
+
+@keyframes open2{
+  to{
+right:-100%;
+  }
+}
+
+    .clanMenu{
+ user-select: none; 
+ height:63px;
+ text-align:center; 
+ box-shadow:1px 1px 5px ;
+ position: relative;
+ /* border: solid gray 1px; */
+ background-color:rgb(70, 69, 69);
+}
+
+.normalvillagelogo{
+ height:50px;
+ margin-top: 5px;
+}
+
+.hotwaterlogo{
+  height:45px;
+  width: 65px;
+  margin-top: 5px;
+}
+
+.rainlogo{
+    height:50px;
+   }
+
+.grasslogo{
+  height:50px;
+}
+
+.mistlogo{
+  height:48px;
+  margin-top: 5px;
+}
+
+.villageslogo{
+  height:50px;
+  margin-top: 5px;
+ 
+}
+
+.villageslandlogo{
+  height:50px;
+  margin-top: 5px;
+ 
+}
+
+.landlogo{
+  height:50px; 
+  margin-top: 5px;
+}
+
+.map{
+float: right;
+height:63px;
+box-shadow:rgb(133, 24, 24) 1px 1px 8px;
+}   
+
+.firstpage{
+  height:100vh; min-height: 450px; width:100%; padding-bottom: 6%;
+  background-size: cover; 
+}
+
+
+.containerscroll{
+  position: relative;
+  top:8vh;
+  bottom:4vh;
+      width:140px;
+      height:450px;
+      display:flex;  
+      margin: auto;
+      animation: cunscroll 2s ease-in-out;
+      animation-fill-mode: forwards ;
+      animation-delay: 4s;
+      
+    }
+
+    
+    @keyframes cunscroll{
+      to{
+        width:95%;
+      }
+    } 
+
+    .scrollstick{
+      min-width:65px; height:100%; background-color:rgb(129, 34, 34); box-shadow: 1px 1px 10px; z-index: 0;
+      border-radius:100%/ 25px 25px 15px 15px
+    }
+
+    .scrollcontent{
+      
+      animation: conunscroll 2s ease-in-out;
+      background-image: url('../clandisplay/0oldtexture.webp');
+      animation-fill-mode: forwards ;
+      animation-delay:4s ;
+      background-color: rgb(245, 245, 198);
+      height:95%;
+        font-size:22px; 
+        width: 3px;
+        margin-top: 14px;
+          font-family: sans-serif;
+          overflow: auto;
+          overflow-x: hidden;
+          box-shadow: 1px 1px 8px rgb(88, 88, 62);
+    }
+
+    @keyframes conunscroll{
+      to{
+        width:95%;
+      }
+    }
+
+    .scrollcontentspan{
+   
+      background-image: url('../clandisplay/1oldtexture.webp');
+      width:100%; display: block; 
+margin-top:42px;
+background-color:rgb(244, 245, 240);
+color: rgba(97, 13, 13, 0.863); height: 80%;
+box-shadow: 0px 0px 8px rgba(139, 0, 0, 0.705);
+overflow: hidden;
+
+    }
+
+    
+    .scrollcontentp{
+      font-family:Georgia, serif;
+      top:32px; position: relative;  min-width: 500px; margin:auto;
+      width:99%;
+      margin: auto;
+
+    }
+
+    .scrollimg{
+      width:45px;
+        opacity: 0;
+        animation:displayimg 3s ease-in-out;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes displayimg{
+      from{opacity: 0;}
+      to{opacity: 1;}
+     }
+   
+
+
+    a{
+      text-decoration: none;
+    }
+
+    .secondpage{
+      width: 100%; padding-top:2%; padding-bottom: 0%; min-height:fit-content;
+ background-color:rgb(51, 51, 51);
+ padding-bottom: 12px;
+    }
+
+    .charactercontainer{
+      
+      display: block;
+      margin: auto;
+      /* background-color:#00ffff; */
+      width:fit-content;
+      text-align: center;
+    }
+
+    .classimgname{
+         display: none;
+   
+        }
+
+
+        .classimgnamed{
+      margin-top:135px;
+         width:240px;
+         height:45px;
+         position: absolute;
+         background-color: aqua;
+         display: block;
+         animation: opacityanime 0.5s linear;
+         transition: 1s;
+         pointer-events: none;
+         animation-fill-mode: forwards;
+
+        }
+        @keyframes opacityanime{
+          from{
+           opacity: 10%;
+          }
+          to{
+          opacity: 100%;
+          }
+        }
+
+        .classimgnamep{
+          margin-top:10px; font-size: larger;
+        }
+        
+
+
+
+      .clanImg{
+        width:240px;
+        /* box-shadow: 1px 1px 9px
+        black; */
+
+      }
+
+
+
+        .tableheadcontainer{
+          background-color:rgb(153, 1, 1);
+          position: relative;
+          color: rgb(125, 226, 125);
+          box-shadow: 2px 2px 10px black;
+          margin:auto;
+          max-width:980px;
+          z-index: 1;
+          height:55px;
+          width:100%;
+          
+        }
+
+
+        .tableheadcontainer h3{
+          margin: auto;
+          position: relative;
+          top:14px;
+          text-align: center; 
+        }
+
+
+
+    .tablecontainer{
+      position:relative;
+      overflow: auto;
+      text-align: center; 
+      margin: auto;
+      /* background-color: red; */
+      height:fit-content;
+      text-align: center;
+
+    }
+
+    .charactercontainer a{
+      cursor:context-menu;
+    }
+
+    .thirdpage{
+     background-color: rgb(41, 41, 41); width: 100%; height: fit-content;
+    }
+
+    .container{
+      margin:auto; 
+      display: block;
+      background-color:black; 
+    
+      min-width:400px;
+      max-width:600px;
+      height: fit-content; 
+      /* zoom:120%; */
+      /* text-align: center;*/
+    } 
+
+    .container h4{
+      text-align: center; color: red; padding-top:35px;
+    }
+
+    .jutsu{
+      margin: auto; display: block; width:fit-content;
+    }
+
+      .jutsup{
+        color: rgb(194, 194, 194); 
+      width: 94%;
+      margin: auto;
+      }
+
+    .clanGif{
+      width: 280px;
+      margin: auto;
+
+    }
+
+    .nojutsu{
+      width:115px;
+    }
+      .footer{
+    position: static;
+    display: block;
+    min-height: 175px;
+    width:100%;
+    font-size:12px;
+    color: antiquewhite;
+    /* display:block; */
+    padding-top: 8%;
+    padding-bottom:0%;
+    height:100%;
+    background-color:rgb(32, 32, 32);
+  }
+
+
+    .pcontainer{
+      display:block; margin:auto;  width:40%;
+    }
+
+
+    .pcontainer p{
+      text-align: justify;
+    }
+
+    .icon{
+      width:119px;
+      height: 54px;
+      display:block;
+      margin:auto;
+    }
+
+    .icon img{
+      width:30px;
+    }
+
+    .footercopyright{
+      display:block;
+      margin:auto;
+      position:relative;
+      top:2%;
+    }
+
+    hr{
+      width:40%;
+      border: solid gray 0.1px;
+    }
+
+    .footercopyright p{
+      text-align: center;
+    }
+
+
+    @media screen and (max-width:650px) {
+      .scrollcontentp{
+        min-width: 150px;
+      }
+
+      .scrollcontent{
+          height:96%;
+        }
+
+    .containerscroll{
+      top: 9vh;
+        height: 500px;
+      }
+    }   
+
+
+      @media screen and (max-width:580px) {
+
+        .classimgname{
+         display: none;   
+        }
+
+
+        .classimgnamed{
+         margin-top:165px;
+         width:280px;
+         height:45px;
+         position: absolute;
+         background-color: aqua;
+         display: block;
+
+        }
+ 
+        .scrollcontent{
+          height:95%;
+        }
+
+    .containerscroll{
+        height: 440px;
+      }
+
+      .scrollcontentspan{
+        margin-top: 22px;
+        height: 90%;
+      }
+
+      .scrollcontentp{
+        top:8px;
+        width: 98%;
+        font-size:15px;
+        
+      }
+
+        .container{
+          min-width:100px;
+        }
+
+        .tablecontainer{
+          height:648px;
+        }
+
+        .tableheadcontainer{
+         min-width:200px;
+         width:100%;
+         text-align: center;
+        }
+
+        .clanImg{
+      width:280px;}
+
+
+
+
+      td{
+        display: block;
+      }
+
+      .clanGif{
+          width:90%;
+          margin: auto;
+          display: block;
+      }
+
+
+   
+
+      #clanGif{
+        margin-top: 4px;
+      }
+
+
+      .jutsup{
+      width: 88%;
+       max-width:324px; 
+      }
+    }
