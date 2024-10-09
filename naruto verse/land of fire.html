@@ -1,0 +1,1941 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="icon" href="00symbol\Nland of fire.png">
+        <link rel="stylesheet" type="text/css" href="0cssJava\alllands.css">
+        <title>
+            land of fire
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <style>
+.wallpaper{
+      background-image: url('Land of Fire.webp');
+    }
+
+    .landmenu{
+        box-shadow:rgb(145, 44, 44) 2px 2px 10px;
+    }
+
+
+    .landmem ::-webkit-scrollbar{
+    background-color: rgb(233, 177, 177);
+    border-radius: 18px;
+  }
+
+  .landmem  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+  
+  
+  }
+   
+  
+  .landmem  ::-webkit-scrollbar-thumb {
+    background: rgba(223, 48, 48, 0.842);
+    border-radius: 6px;
+  
+  }
+
+
+    .nameOfLand{
+        color:rgb(199, 53, 53);
+    }
+
+
+    .map{
+        box-shadow:rgb(133, 24, 24) 1px 1px 8px;
+    }
+
+    .smallsizesearch{
+        box-shadow:rgb(133, 24, 24) 2px 2px 10px;
+    }
+
+
+    .characterlistA{
+        background-color:red;
+    }
+
+    .imageH4{
+        color:darkred;
+    }
+
+    .introinfo p{
+        color: rgb(224, 41, 41);
+    }
+
+    .secondpage{
+        background-image:url('landoffirehiddenleaf.webp');
+        /* background-color: red; */
+    }
+
+
+    .hiddenvillagewrap{
+        box-shadow:rgb(133, 24, 24) 2px 2px 8px;
+    }
+
+    .hiddenvillagep{
+        color:rgb(230, 43, 43);
+    }
+
+
+    .thirdpageline, .thirdpagetitle{
+        background-color: darkred;
+    }
+
+    .fclansbutton{
+    background-color:rgba(255, 0, 0, 0.452);
+    border: solid grey 0.1px;
+    background-position:center;
+    background-repeat: no-repeat;
+    float: right;
+    background-size:50px;
+    cursor: pointer;
+    width:70px;
+    height:70px;
+}
+    
+
+        .slideimagename span:hover{
+        box-shadow: 1px 1px 9px red;
+    }
+    
+    .slideimagename span a{
+        color: red;
+    }
+
+
+
+
+
+
+    #buttonssenju{
+        background-size: 80px;
+        height:70px;
+        width:140px;
+    }
+
+    #buttonsuchiha{
+        background-size: 40px;
+    }
+
+    #buttonsharuno{
+        background-size: 42px;
+    }
+
+    #buttonskurama{
+        background-size: 25px;
+    }
+
+
+    @media  screen and (max-width: 482px) {
+
+      
+
+      .fclansbutton{
+        background-size:38px;
+                    width:60px;
+                    height:50px;
+                }
+
+
+        #buttonssenju{
+    width:120px;
+    height:50px;
+        }
+
+        #buttonsuchiha{
+            background-size: 27px;
+        }
+
+        #buttonsharuno{
+            background-size: 35px;
+        }
+
+        #buttonskurama{
+            background-size: 20px;
+        }
+    }
+
+
+
+
+    </style>
+
+</head>
+
+
+    <!-- menu or header-->
+    <body class="" id="js">
+<div class="wallpaper"></div>
+        <div id="landmenu" class="landmenu">
+            <div draggable="false" class="nameOfLand">
+                <img  class="nameOfLandimg" draggable="false"   src="00symbol\Nland of fire.png">
+                <span class="landnamespan">
+                    <a id="landname">LAND OF FIRE
+
+                    </a>
+                </span>
+            </div>
+        
+            <iframe  class="LobjectFrame" frameborder="0" scrolling="no" src="0search\search.html"></iframe>
+
+            <a href="shinobi world map.html"><img draggable="false"  class="map" src="00symbol\map.jpg">
+            </a>
+        <!-- <img class="hidden" draggable="false" src="00symbol\hiddenlines.png"> -->
+        </div>
+        <!-- cover that triggers the removal of the character list -->
+        <div id="iframecover"  class="iframecover"></div>
+
+
+        <div class="smallsizesearch">
+            <iframe frameborder="0" scrolling="no" src="0search\search.html"></iframe>
+        </div>
+
+
+        <!-- list of character to be displayed -->
+        <div class="characterdisplay">
+            <!-- start -->
+            <!-- character triggrer -->
+            <div id="characterlistAOcontainer">
+                <div class="characterlistO" id="characterlistAO"></div>
+            </div>
+
+
+            <!--
+            |
+            linked
+            |
+            -->
+            <!-- list of character -->
+            <div  class="characterposition">
+            <div  id="characterlist" class="landmem" >
+
+            <a id="characterlistAC"><h1 class="characterlistA" >X</h1>
+            </a>
+            <button  class="titlecharacterlist"><h3>Citizens of the Land (dead or alive)</h3></button>
+            <div  class="listofcharacterwrap">
+                <a href="#aburame muta.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\aburame muta.jpg">
+                      <H4 class="imageH4">Aburame Muta</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#aburame shibi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\aburame shibi.jpg">
+                      <H4 class="imageH4">Aburame Shibi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#aburame shikuro.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\aburame shikuro.jpg">
+                      <H4 class="imageH4">Aburame Shikuro</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#aburame shino.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\aburame shino.jpg">
+                      <H4 class="imageH4">Aburame Shino</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#aburame tatsuma.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\aburame tatsuma.jpg">
+                      <H4 class="imageH4">Aburame Tatsuma</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#aburame torune.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\aburame torune.jpg">
+                      <H4 class="imageH4">Aburame Torune</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi chobee.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi chobee.jpg">
+                      <H4 class="imageH4">Akimichi Chobee</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi chocho.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi chocho.jpg">
+                      <H4 class="imageH4">Akimichi Chocho</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi choji.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi choji.jpg">
+                      <H4 class="imageH4">Akimichi Choji</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi choji's mom.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi choji's mom.jpg">
+                      <H4 class="imageH4">Akimichi Choji's mom</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi choza.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi choza.jpg">
+                      <H4 class="imageH4">Akimichi Choza</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi doto.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi doto.jpg">
+                      <H4 class="imageH4">Akimichi Doto</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi karui.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi karui.jpg">
+                      <H4 class="imageH4">Akimichi Karui</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi makaro.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi makaro.jpg">
+                      <H4 class="imageH4">Akimichi Makaro</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi maruten.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi maruten.jpg">
+                      <H4 class="imageH4">Akimichi Maruten</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi shito.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi shito.jpg">
+                      <H4 class="imageH4">Akimichi Shito</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#akimichi torifu.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\akimichi torifu.jpg">
+                      <H4 class="imageH4">Akimichi Torifu</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#haruno mebuki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\haruno mebuki.jpg">
+                      <H4 class="imageH4">Haruno Mebuki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#haruno kizashi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\haruno kizashi.jpg">
+                      <H4 class="imageH4">Haruno Kizashi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha sakura.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha sakura.jpg">
+                      <H4 class="imageH4">Uchiha Sakura</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hatake kakashi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hatake kakashi.jpg">
+                      <H4 class="imageH4">hatake kakashi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hatake sakumo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hatake sakumo.jpg">
+                      <H4 class="imageH4">hatake sakumo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga hanabi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga hanabi.jpg">
+                      <H4 class="imageH4">Hyuga Hanabi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga hiashi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga hiashi.jpg">
+                      <H4 class="imageH4">Hyuga Hiashi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga hinata and hanabi's mum.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga hinata and hanabi's mum.jpg">
+                      <H4 class="imageH4">Hyuga Hinata and Hanabi's mum  </h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga hizashi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga hizashi.jpg">
+                      <H4 class="imageH4">Hyuga Hizashi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga hoheto.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga hoheto.jpg">
+                      <H4 class="imageH4">Hyuga Hoheto</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga elder.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga elder.jpg">
+                      <H4 class="imageH4">Hyuga Elder</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga iroha.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga iroha.jpg">
+                      <H4 class="imageH4">Hyuga Iroha</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga ko.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga ko.jpg">
+                      <H4 class="imageH4">Hyuga Ko</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga natsu.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga natsu.jpg">
+                      <H4 class="imageH4">Hyuga Natsu</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga neji.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga neji.jpg">
+                      <H4 class="imageH4">Hyuga Neji</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga tetsu.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga tetsu.jpg">
+                      <H4 class="imageH4">Hyuga Tetsu</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyuga tokuma.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyuga tokuma.jpg">
+                      <H4 class="imageH4">Hyuga Tokuma</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#inuzuka hana.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\inuzuka hana.jpg">
+                      <H4 class="imageH4">inuzuka hana</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#inuzuka tsume.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\inuzuka tsume.jpg">
+                      <H4 class="imageH4">inuzuka tsume</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#inuzuka akita.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\inuzuka akita.jpg">
+                      <H4 class="imageH4">inuzuka akita</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#inuzuka gaku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\inuzuka gaku.jpg">
+                      <H4 class="imageH4">inuzuka gaku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#inuzuka kiba.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\inuzuka kiba.jpg">
+                      <H4 class="imageH4">inuzuka kiba</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kurama unkai.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kurama unkai.jpg">
+                      <H4 class="imageH4">kurama unkai</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kurama murakumo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kurama murakumo.jpg">
+                      <H4 class="imageH4">kurama murakumo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kurama uroko.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kurama uroko.jpg">
+                      <H4 class="imageH4">kurama uroko</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kurama yakumo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kurama yakumo.jpg">
+                      <H4 class="imageH4">kurama yakumo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara daen.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara daen.jpg">
+                      <H4 class="imageH4">Nara Daen</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara enchu.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara enchu.jpg">
+                      <H4 class="imageH4">Nara Enchu</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara ensui.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara ensui.jpg">
+                      <H4 class="imageH4">Nara Ensui</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara kasuga.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara kasuga.jpg">
+                      <H4 class="imageH4">Nara Kasuga</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara maen.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara maen.jpg">
+                      <H4 class="imageH4">Nara Maen</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara shikadai.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara shikadai.jpg">
+                      <H4 class="imageH4">Nara Shikadai</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara shikaku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara shikaku.jpg">
+                      <H4 class="imageH4">Nara Shikaku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara shikamaru.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara shikamaru.jpg">
+                      <H4 class="imageH4">Nara Shikamaru</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara suzaku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara suzaku.jpg">
+                      <H4 class="imageH4">Nara Suzaku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara temari.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara temari.jpg">
+                      <H4 class="imageH4">Nara Temari</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#nara yoshino.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\nara yoshino.jpg">
+                      <H4 class="imageH4">Nara Yoshino</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sarutobi asuma.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\sarutobi asuma.jpg">
+                      <H4 class="imageH4">sarutobi asuma</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sarutobi biwako.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\sarutobi biwako.jpg">
+                      <H4 class="imageH4">sarutobi biwako</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sarutobi hiruzen.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\sarutobi hiruzen.jpg">
+                      <H4 class="imageH4">Sarutobi Hiruzen</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sarutobi konohamaru.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\sarutobi konohamaru.jpg">
+                      <H4 class="imageH4">Sarutobi Konohamaru</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sarutobi kurenai.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\sarutobi kurenai.jpg">
+                      <H4 class="imageH4">Sarutobi Kurenai</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sarutobi mirai.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\sarutobi mirai.jpg">
+                      <H4 class="imageH4">Sarutobi Mirai</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sarutobi sasuke.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\sarutobi sasuke.jpg">
+                      <H4 class="imageH4">Sarutobi Sasuke</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#senju butsuma.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\senju butsuma.jpg">
+                      <H4 class="imageH4">Senju Butsuma</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#senju mito.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\senju mito.jpg">
+                      <H4 class="imageH4">Senju Mito</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#senju hashirama.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\senju hashirama.jpg">
+                      <H4 class="imageH4">Senju Hashirama</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#senju itama.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\senju itama.jpg">
+                      <H4 class="imageH4">Senju Itama</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#senju kawarama.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\senju kawarama.jpg">
+                      <H4 class="imageH4">Senju Kawarama</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#senju nawaki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\senju nawaki.jpg">
+                      <H4 class="imageH4">Senju Nawaki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#senju tobirama.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\senju tobirama.jpg">
+                      <H4 class="imageH4">Senju Tobirama</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#senju toka.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\senju toka.jpg">
+                      <H4 class="imageH4">Senju Toka</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#senju tsunade.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\senju tsunade.jpg">
+                      <H4 class="imageH4">Senju Tsunade</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shimura danzo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\shimura danzo.jpg">
+                      <H4 class="imageH4">Shimura Danzo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha baru.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha baru.jpg">
+                      <H4 class="imageH4">Uchiha Baru</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha fugaku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha fugaku.jpg">
+                      <H4 class="imageH4">Uchiha Fugaku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha hikaku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha hikaku.jpg">
+                      <H4 class="imageH4">Uchiha Hikaku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha inabi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha inabi.jpg">
+                      <H4 class="imageH4">Uchiha Inabi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha itachi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha itachi.jpg">
+                      <H4 class="imageH4">Uchiha Itachi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha izumi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha izumi.jpg">
+                      <H4 class="imageH4">Uchiha Izumi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha izuna.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha izuna.jpg">
+                      <H4 class="imageH4">Uchiha Izuna</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha kagami.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha kagami.jpg">
+                      <H4 class="imageH4">Uchiha Kagami</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha madara.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha madara.jpg">
+                      <H4 class="imageH4">Uchiha Madara</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha mikoto.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha mikoto.jpg">
+                      <H4 class="imageH4">Uchiha Mikoto</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha naka.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha naka.jpg">
+                      <H4 class="imageH4">Uchiha Naka</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha naori.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha naori.jpg">
+                      <H4 class="imageH4">Uchiha Naori</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha obito.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha obito.jpg">
+                      <H4 class="imageH4">Uchiha Obito</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha obito's grandma.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha obito's grandma.jpg">
+                      <H4 class="imageH4">Uchiha Obito's grandma</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha rai.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha rai.jpg">
+                      <H4 class="imageH4">Uchiha Rai</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha sarada.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha sarada.jpg">
+                      <H4 class="imageH4">Uchiha Sarada</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha sasuke.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha sasuke.jpg">
+                      <H4 class="imageH4">Uchiha Sasuke</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha setsuna.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha setsuna.jpg">
+                      <H4 class="imageH4">Uchiha Setsuna</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha shisui.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha shisui.jpg">
+                      <H4 class="imageH4">Uchiha Shisui</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha taiko.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha taiko.jpg">
+                      <H4 class="imageH4">Uchiha Taiko</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha tajima.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha tajima.jpg">
+                      <H4 class="imageH4">Uchiha Tajima</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha tekka.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha tekka.jpg">
+                      <H4 class="imageH4">Uchiha Tekka</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha teyaki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha teyaki.jpg">
+                      <H4 class="imageH4">Uchiha Teyaki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha uruchi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha uruchi.jpg">
+                      <H4 class="imageH4">Uchiha Uruchi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha yakumi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha yakumi.jpg">
+                      <H4 class="imageH4">Uchiha Yakumi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uchiha yashiro.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uchiha yashiro.jpg">
+                      <H4 class="imageH4">Uchiha Yashiro</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uzumaki ashina.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uzumaki ashina.jpg">
+                      <H4 class="imageH4">Uzumaki Ashina</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uzumaki boruto.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uzumaki boruto.jpg">
+                      <H4 class="imageH4">Uzumaki Boruto</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uzumaki fuso.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uzumaki fuso.jpg">
+                      <H4 class="imageH4">Uzumaki Fuso</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uzumaki himawari.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uzumaki himawari.jpg">
+                      <H4 class="imageH4">Uzumaki Himawari</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uzumaki hinata.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uzumaki hinata.jpg">
+                      <H4 class="imageH4">Uzumaki Hinata</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uzumaki kushina.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uzumaki kushina.jpg">
+                      <H4 class="imageH4">Uzumaki Kushina</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uzumaki nagato.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uzumaki nagato.jpg">
+                      <H4 class="imageH4">Uzumaki Nagato</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#uzumaki naruto.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\uzumaki naruto.jpg">
+                      <H4 class="imageH4">Uzumaki Naruto</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yamanaka ino.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yamanaka ino.jpg">
+                      <H4 class="imageH4">Yamanaka Ino</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yamanaka fu.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yamanaka fu.jpg">
+                      <H4 class="imageH4">Yamanaka Fu</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yamanaka inoichi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yamanaka inoichi.jpg">
+                      <H4 class="imageH4">Yamanaka Inoichi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yamanaka santa.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yamanaka santa.jpg">
+                      <H4 class="imageH4">Yamanaka Santa</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yamanaka inojin.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yamanaka inojin.jpg">
+                      <H4 class="imageH4">Yamanaka Inojin</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yamanaka ino's mother.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yamanaka ino's mother.jpg">
+                      <H4 class="imageH4">Yamanaka Ino's mother</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#ami.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\ami.jpg">
+                      <H4 class="imageH4">Ami</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#anko mitarashi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\anko mitarashi.jpg">
+                      <H4 class="imageH4">Anko Mitarashi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#aoba yamashiro.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\aoba yamashiro.jpg">
+                      <H4 class="imageH4">Aoba Yamashiro</h4>
+                    </div>
+                  </a>
+                  <!-- <br>
+                  <a href="#aoi rokusho.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\aoi rokusho.jpg">
+                      <H4 class="imageH4">Aoi Rokusho</h4>
+                    </div>
+                  </a> -->
+                  <br>
+                  <a href="#ayame.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\ayame.jpg">
+                      <H4 class="imageH4">Ayame</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#bekko.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\bekko.jpg">
+                      <H4 class="imageH4">Bekko</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#daikoku funeno.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\daikoku funeno.jpg">
+                      <H4 class="imageH4">Daikoku Funeno</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#dan kato.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\dan kato.jpg">
+                      <H4 class="imageH4">Dan Kato</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#doshu goetsu.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\doshu goetsu.jpg">
+                      <H4 class="imageH4">Doshu Goetsu</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#ebisu.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\ebisu.jpg">
+                      <H4 class="imageH4">Ebisu</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#fuki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\fuki.jpg">
+                      <H4 class="imageH4">fuki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#genma shiranui.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\genma shiranui.jpg">
+                      <H4 class="imageH4">Genma Shiranui</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#gennai.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\gennai.jpg">
+                      <H4 class="imageH4">Gennai</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hamaki mimura.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hamaki mimura.jpg">
+                      <H4 class="imageH4">Hamaki Mimura</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hayama shirakumo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hayama shirakumo.jpg">
+                      <H4 class="imageH4">Hayama Shirakumo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hayase.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hayase.jpg">
+                      <H4 class="imageH4">Hayase</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hayate gekko.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hayate gekko.jpg">
+                      <H4 class="imageH4">Hayate Gekko</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hinoko.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hinoko.jpg">
+                      <H4 class="imageH4">Hinoko</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hoki taketori.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hoki taketori.jpg">
+                      <H4 class="imageH4">Hoki Taketori</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#homura mitokado.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\homura mitokado.jpg">
+                      <H4 class="imageH4">Homura Mitokado</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hosei.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hosei.jpg">
+                      <H4 class="imageH4">Hosei</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#hyou.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\hyou.jpg">
+                      <H4 class="imageH4">Hyou</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#inaho.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\inaho.jpg">
+                      <H4 class="imageH4">Inaho</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#inomatsu.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\inomatsu.jpg">
+                      <H4 class="imageH4">Inomatsu</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#iwabe yuino.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\iwabe yuino.jpg">
+                      <H4 class="imageH4">Iwabe yuino</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#iwana akame.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\iwana akame.jpg">
+                      <H4 class="imageH4">Iwana Akame</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#iwashi tatami.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\iwashi tatami.jpg">
+                      <H4 class="imageH4">Iwashi Tatami</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#iyashi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\iyashi.jpg">
+                      <H4 class="imageH4">Iyashi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#izumo kamizuki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\izumo kamizuki.jpg">
+                      <H4 class="imageH4">Izumo Kamizuki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#Jiraiya.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\jiraiya.jpg">
+                      <H4 class="imageH4">Jiraiya</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kanpo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kanpo.jpg">
+                      <H4 class="imageH4">Kanpo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kaminarimon denki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kaminarimon denki.jpg">
+                      <H4 class="imageH4">Kaminarmon Denki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kaminarimon ereki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kaminarimon ereki.jpg">
+                      <H4 class="imageH4">Ereki Kaminarimon</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kasumi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kasumi.jpg">
+                      <H4 class="imageH4">Kasumi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kito.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kito.jpg">
+                      <H4 class="imageH4">Kito</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#koharu utatane.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\koharu utatane.jpg">
+                      <H4 class="imageH4">Koharu Utatane</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#komugi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\komugi.jpg">
+                      <H4 class="imageH4">Komugi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kosuke maruboshi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kosuke maruboshi.jpg">
+                      <H4 class="imageH4">Kosuke Maruboshi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kotetsu hagane.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kotetsu hagane.jpg">
+                      <H4 class="imageH4">Kotetsu Hagane</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kumade toriichi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kumade toriichi.jpg">
+                      <H4 class="imageH4">Kumade Toriichi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kumadori.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kumadori.jpg">
+                      <H4 class="imageH4">Kumadori</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kunugi mokume.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kunugi mokume.jpg">
+                      <H4 class="imageH4">Kunugi Mokume</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kuroi hako.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kuroi hako.jpg">
+                      <H4 class="imageH4">Kuroi Hako</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#kusushi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\kusushi.jpg">
+                      <H4 class="imageH4">Kusushi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mawashi dokuraku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\mawashi dokuraku.jpg">
+                      <H4 class="imageH4">Mawashi Dokuraku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#might dai.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\might dai.jpg">
+                      <H4 class="imageH4">Might Dai</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#might guy.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\might guy.jpg">
+                      <H4 class="imageH4">Might Guy</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#minato namikaze.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\minato namikaze.jpg">
+                      <H4 class="imageH4">Minato Namikaze</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#minoji.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\minoji.jpg">
+                      <H4 class="imageH4">Minoji</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#misumi tsurugi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\misumi tsurugi.jpg">
+                      <H4 class="imageH4">Misumi Tsurugi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mitate.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\mitate.jpg">
+                      <H4 class="imageH4">Mitate</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mitsuki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\mitsuki.jpg">
+                      <H4 class="imageH4">Mitsuki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mizuki touji.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\mizuki touji.jpg">
+                      <H4 class="imageH4">Mizuki  Touji</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#moegi kazamatsuri.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\moegi kazamatsuri.jpg">
+                      <H4 class="imageH4">Moegi Kazamatsuri</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mogusa.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\mogusa.jpg">
+                      <H4 class="imageH4">Mogusa</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#morino ibiki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\morino ibiki.jpg">
+                      <H4 class="imageH4">Morino Ibiki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#morino idate.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\morino idate.jpg">
+                      <H4 class="imageH4">Morino Idate</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mozuku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\mozuku.jpg">
+                      <H4 class="imageH4">Mozuku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#mugino.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\mugino.jpg">
+                      <H4 class="imageH4">Mugino</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#namida suzumeno.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\namida suzumeno.jpg">
+                      <H4 class="imageH4">namida Suzumeno</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#natori.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\natori.jpg">
+                      <H4 class="imageH4">Natori</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#lee metal.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\lee metal.jpg">
+                      <H4 class="imageH4">Lee Metal</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#lee rock.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\lee rock.jpg">
+                      <H4 class="imageH4">Lee Rock</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#okei.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\okei.jpg">
+                      <H4 class="imageH4">Okei</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#enko onikuma.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\enko onikuma.jpg">
+                      <H4 class="imageH4">Enko Onikuma</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#orochimaru.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\orochimaru.jpg">
+                      <H4 class="imageH4">Orochimaru</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#oyone.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\oyone.jpg">
+                      <H4 class="imageH4">Oyone</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#raido namiashi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\raido namiashi.jpg">
+                      <H4 class="imageH4">Raido Namiashi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#ranka.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\ranka.jpg">
+                      <H4 class="imageH4">Ranka</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#renga kokubo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\renga kokubo.jpg">
+                      <H4 class="imageH4">Renga Kokubo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#rin nohara.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\rin nohara.jpg">
+                      <H4 class="imageH4">Rin Nohara</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#ro.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\ro.jpg">
+                      <H4 class="imageH4">Ro</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shibire.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\shibire.jpg">
+                      <H4 class="imageH4">Shibire</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shiho.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\shiho.jpg">
+                      <H4 class="imageH4">Shiho</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shimon hijiri.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\shimon hijiri.jpg">
+                      <H4 class="imageH4">Shimon Hijiri</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shin.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\shin.jpg">
+                      <H4 class="imageH4">Shin</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shinko inari.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\shinko inari.jpg">
+                      <H4 class="imageH4">Shinko Inari</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shinku yuhi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\shinku yuhi.jpg">
+                      <H4 class="imageH4">Shinku Yuhi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shinobu mibu.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\shinobu mibu.jpg">
+                      <H4 class="imageH4">Shinobu Mibu</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#shizune.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\shizune.jpg">
+                      <H4 class="imageH4">Shizune</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#sumire kakei.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\sumire kakei.jpg">
+                      <H4 class="imageH4">Sumire kakei</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#suzume.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\suzume.jpg">
+                      <H4 class="imageH4">Suzume</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tanzo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tanzo.jpg">
+                      <H4 class="imageH4">Tanzo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tekuno kanden.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tekuno kanden.jpg">
+                      <H4 class="imageH4">Tekuno Kanden</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tenma izumo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tenma izumo.jpg">
+                      <H4 class="imageH4">Tenma Izumo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tenten.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tenten.jpg">
+                      <H4 class="imageH4">Tenten</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tenuki shigaraki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tenuki shigaraki.jpg">
+                      <H4 class="imageH4">Tenuki Shigaraki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tenzo.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tenzo.jpg">
+                      <H4 class="imageH4">Tenzo</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#teuchi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\teuchi.jpg">
+                      <H4 class="imageH4">Teuchi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tobio.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tobio.jpg">
+                      <H4 class="imageH4">Tobio</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tokara.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tokara.jpg">
+                      <H4 class="imageH4">Tokara</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tonbo tobitake.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tonbo tobitake.jpg">
+                      <H4 class="imageH4">Tonbo Tobitake</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tsuru itoi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tsuru itoi.jpg">
+                      <H4 class="imageH4">Tsuru Itoi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#tsuzumi sarugaku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\tsuzumi sarugaku.jpg">
+                      <H4 class="imageH4">Tsuzumi Sarugaku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#udon ise.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\udon ise.jpg">
+                      <H4 class="imageH4">Udon Ise</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#umino ikkaku.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\umino ikkaku.jpg">
+                      <H4 class="imageH4">Umino Ikkaku</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#umino iruka.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\umino iruka.jpg">
+                      <H4 class="imageH4">Umino Iruka</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#umino kohari.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\umino kohari.jpg">
+                      <H4 class="imageH4">Umino Kohari</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#urushi.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\urushi.jpg">
+                      <H4 class="imageH4">Urushi</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#wasabi izuno.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\wasabi izuno.jpg">
+                      <H4 class="imageH4">Wasabi Izuno</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yajirobee.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yajirobee.jpg">
+                      <H4 class="imageH4">Yajirobee</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yakushi kabuto.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yakushi kabuto.jpg">
+                      <H4 class="imageH4">Yakushi Kabuto</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yakushi nono.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yakushi nono.jpg">
+                      <H4 class="imageH4">Yakushi Nono</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yoroi akado.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yoroi akado.jpg">
+                      <H4 class="imageH4">Yoroi Akado</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yugao uzuki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yugao uzuki.jpg">
+                      <H4 class="imageH4">Yugao Uzuki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yuki minazuki.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yuki minazuki.jpg">
+                      <H4 class="imageH4">Yuki Minazuki</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#yurika.html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\yurika.jpg">
+                      <H4 class="imageH4">Yurika</h4>
+                    </div>
+                  </a>
+                  <br>
+                  <a href="#zaji .html"  class="ahreStuff">
+                    <div class="link" >
+                      <img class="imageId" src="idsImg\zaji.jpg">
+                      <H4 class="imageH4">Zaji</h4>
+                    </div>
+                  </a>
+                  <br>
+            </div></div>
+            </div>
+        </div>
+        <!-- end -->
+
+
+                <div id="searcherror">
+            <p><h2 id="negativedisplay"></h2></p>
+               </div>
+
+        <!-- land info -->
+        <div class="firstpage">
+            <div class="introinfo">
+                <p class="introinfoP">
+                    The Land of Fire is one of the land if the largest and most powerfull countries. The head of the country is feudal lord and it hidden village is the hidden in the leaves <span class="introinfospan">( hidden leaf village), home of the nation's shinobi. It has powerfull shinobis which are not necesserily part of the hidden leaf.</span>
+                </p>
+            </div>
+        </div>
+
+
+        <!-- the hidden village-->
+        <div class="secondpage">
+            <div class="hiddenvillagewrap">
+            <p class="hiddenvillagep">
+                <img src="00symbol/firehiddenvillage.png" style="width: 42px;">The village hidden in the leaves was founded after a long fight between the <a href="#..\clan\Senju.html">Senju</a> and <a href="#..\clan\Uchiha.html">Uchiha</a> clan. This was the dream of <a href="#..\characters\Senju Hashirama.html">Hashirama Senju</a> and <a href="#..\characters\Uchiha Madara.html">Madara Uchiha</a>. They wanted it to be a village were shinobis are given <span class="hiddenvillagespan">missions based on there power level and were kids can study and also be protected.The head of the village is called the hokage. And the hidden leaf village also exist to protect the land of fire. <a href="#..\characters\Senju Hashirama.html">Hashirama Senju</a> became the first hokage.The village is now at it seventh Hokage, <a href="#..\characters\Uzumaki Naruto.html">Naruto Uzumaki</a>.</span>
+            </p>
+        </div>
+
+        </div>
+
+
+        <!-- clan image display -->
+        <div class="thirdpage" >
+            <div class="thirdpageline"></div>
+            <div class="thirdpagetitle">
+                <p>Clans in The Leaf</p>
+            </div> 
+
+            <div class="landDIV" id="landdiv">
+                <button class="fclansbutton"  title="SHIMURA" style=" background-image:url('00symbol\\shimura1.png'); "></button>
+                <button class="fclansbutton"  title="KOHAKU" style=" background-image:url('00symbol\\kohaku.png'); "></button>
+                <button id="buttonssenju" class="fclansbutton"  title="SENJU" style=" background-image:url('00symbol\\senju1.png'); "></button>
+                <button id="buttonsuchiha" class="fclansbutton"  title="UCHIHA" style=" background-image:url('00symbol\\uchiha1.png'); "></button>
+                <button class="fclansbutton"  title="HYUGA" style=" background-image:url('00symbol\\hyuga1.png'); "></button>
+                <button class="fclansbutton"  title="UZUMAKI" style=" background-image:url('00symbol\\uzumaki1.png'); "></button>
+                <button class="fclansbutton"  title="SARUTOBI" style=" background-image:url('00symbol\\sarutobi1.png'); "></button>
+                <button class="fclansbutton"  title="NARA" style=" background-image:url('00symbol\\nara1.png'); "></button>
+                <button class="fclansbutton"  title="ABURAME" style=" background-image:url('00symbol\\aburame1.png'); "></button>
+                <button class="fclansbutton"  title="AKIMICHI" style=" background-image:url('00symbol\\akimichi1.png'); "></button>
+                <button id="buttonsharuno" class="fclansbutton"  title="HARUNO" style=" background-image:url('00symbol\\haruno1.png'); "></button>
+                <button class="fclansbutton"  title="YAMANAKA" style=" background-image:url('00symbol\\yamanaka1.png'); "></button>
+                <button class="fclansbutton"  title="HATAKE" style=" background-image:url('00symbol\\hatake1.png'); "></button>
+                <button id="buttonskurama" class="fclansbutton"  title="KURAMA" style=" background-image:url('00symbol\\kurama.png'); "></button>
+                <button class="fclansbutton"  title="INUZUKA" style=" background-image:url('00symbol\\inuzuka.png'); "></button>
+            </div>
+
+            <div class="slideimage">
+            <div class="slideimages" style="background-image:url('clandisplay/inuzuka.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="inuzuka.html">Inuzuka Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/kurama.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="kurama.html">Kurama Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/hatake.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="hatake.html">Hatake Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/yamanaka.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="yamanaka.html">Yamanaka Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/haruno.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="haruno.html">Haruno Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/akimichi.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="akimichi.html">Akimichi Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/aburame.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="aburame.html">Aburame Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/nara.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="nara.html">Nara Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/sarutobi.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="sarutobi.html">Sarutobi Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/uzumaki.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="uzumaki.html">Uzumaki Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/hyuga.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="hyuga.html">Hyuga Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/uchiha.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="uchiha.html">Uchiha Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/senju.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="senju.html">Senju Clan 
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/kohaku.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="kohaku.html">Kohaku Clan
+
+                    </a></span>
+                </p>
+            </div>
+            <div class="slideimages" style="background-image:url('clandisplay/shimura.webp');" >
+                <p class="slideimagename">
+                    <span class="clanname"><a href="shimura.html">Shimura Clan
+
+                    </a></span>
+                    </p>
+</div>
+
+<img class="handpointed" src="00symbol\pointer.png"/>
+
+</div>
+
+</div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="pcontainer">
+                <p> I can creat a simple website like this and send the codes to you. 
+                    I can help you with image editing and video subtitling.</p>
+            </div>
+
+            <div class="icon" >
+                <img src="00symbol/upwork.png">
+                <img src="00symbol/peopleperhour.png">
+            </div>
+
+            <div class="footercopyright">
+                <hr>
+                <p >@ all right reserved to the author Basade</p>
+            </div>
+        </div>
+<script src="0cssJava\ftest.js" defer></script>
+</body>
+
+</html>
