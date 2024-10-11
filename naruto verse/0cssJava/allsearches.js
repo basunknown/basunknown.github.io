@@ -256,7 +256,7 @@ top.document.getElementById('searcherror').style.display='none';}
 function locatedata(){
     
     let inlocations="..\\"
-     let searchvalue=box.value.trim();
+     let searchvalue=box.value.trim().toLowerCase();
             let index=".html"
 
    

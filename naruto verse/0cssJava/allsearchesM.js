@@ -254,7 +254,7 @@ function error(){
 function locatedata(){
     
     // let ignorespace=start;
-     let searchvalue=box.value.trim();
+     let searchvalue=box.value.trim().toLowerCase();
             let index=".html"
 
     let cap=searchvalue.toUpperCase();
