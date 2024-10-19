@@ -1,13 +1,15 @@
+window.addEventListener('load' , function(){
+  document.getElementById('iframeloader').style.display='none';
+});
+
 let image=document.getElementsByClassName('clanImg');
 let p=document.getElementsByClassName('classimgname');
-let loader=  document.getElementById('iframeloader');
 
 
 
 
-window.addEventListener('load' , function(){
-  loader.style.display='none';
-})
+
+
     
 
 for(let i=0; i<image.length; i++){
