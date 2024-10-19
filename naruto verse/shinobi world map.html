@@ -22,6 +22,24 @@
   z-index: 100;
 }
 
+.iframeloader1{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index: 100;
+    animation:fadeaway 0.2s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeaway{
+    to{
+        opacity:0;
+    }
+    to{
+        display: none;
+    }
+}
+
 
 ::-webkit-scrollbar{
     background-color: rgba(192, 159, 97, 0.5);
@@ -366,10 +384,11 @@ right:0px;
            <script>
 document.body.style.overflow = 'hidden';
 
-            window.addEventListener('load' , function(){
-  document.getElementById('iframeloader').style.display='none';
-  document.body.style.overflow = 'scroll';
+window.addEventListener('load' , function(){
+ let preloader= document.getElementById('iframeloader');
+ preloader.classList.add('iframeloader1');
 
+ document.body.style.overflow = 'scroll';
 });
            </script>
            </body>

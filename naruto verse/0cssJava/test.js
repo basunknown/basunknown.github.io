@@ -1,5 +1,8 @@
 window.addEventListener('load' , function(){
-  document.getElementById('iframeloader').style.display='none';
+ let preloader= document.getElementById('iframeloader');
+ preloader.classList.add('iframeloader1');
+
+
 });
 
 let buttono= document.getElementById('characterlistAO');
