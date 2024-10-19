@@ -10,17 +10,16 @@
     width:100%;
     height:100%;
     z-index: 100;
-    animation:fadeaway 0.2s linear;
+    animation:fadeaway 0.1s linear;
     animation-fill-mode: forwards;
 }
 
 @keyframes fadeaway{
     to{
         opacity:0;
+        visibility: hidden;
     }
-    to{
-        display: none;
-    }
+
 }
 
 ::-webkit-scrollbar{

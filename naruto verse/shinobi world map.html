@@ -33,11 +33,10 @@
 
 @keyframes fadeaway{
     to{
-        opacity:0;
+      opacity: 0;
+        visibility: hidden;
     }
-    to{
-        display: none;
-    }
+ 
 }
 
 
@@ -386,9 +385,10 @@ document.body.style.overflow = 'hidden';
 
 window.addEventListener('load' , function(){
  let preloader= document.getElementById('iframeloader');
- preloader.classList.add('iframeloader1');
+  preloader.classList.add('iframeloader1');
+  document.body.style.overflow = 'scroll';
 
- document.body.style.overflow = 'scroll';
+
 });
            </script>
            </body>

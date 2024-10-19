@@ -5,14 +5,13 @@ html{
   animation-fill-mode: forwards;
 }
 
-@keyframes fadeaway{
+@keyframes removescroll{
   to{
-      opacity:0;
+    overflow:auto;
   }
-  to{
-      display: none;
   }
-}
+
+
 
 
 #iframeloader{
@@ -27,15 +26,17 @@ html{
   width:100%;
   height:100%;
   z-index: 100;
-  animation:fadeaway 0.2s linear;
+  animation:fadeaway 0.1s linear;
   animation-fill-mode: forwards;
 }
 
 
-@keyframes removescroll{
-to{
-  overflow:auto;
-}
+@keyframes fadeaway{
+  to{
+    opacity: 0;
+      visibility: hidden;
+  }
+
 }
 
 
