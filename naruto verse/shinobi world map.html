@@ -15,6 +15,14 @@
 
 <style>
 
+#iframeloader{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index: 100;
+}
+
+
 ::-webkit-scrollbar{
     background-color: rgba(192, 159, 97, 0.5);
     border-radius: 18px;
@@ -42,7 +50,7 @@
     scroll-behavior: smooth;
     background-color:rgb(32, 32, 32);
     user-select: none;
-   }
+   } 
 
    /* .LobjectFrame{
     position: absolute; */
@@ -269,7 +277,7 @@ right:0px;
 
 
 <body id="js" style="background-color: grey;">
-
+  <iframe frameborder="0" id="iframeloader"  src="loader\loader.html"></iframe>
 
             <div class="mapmenu">
                 <P class="mapmenup"> Map of The 5 Great Nations and various Hidden Villages</p>
@@ -355,6 +363,14 @@ right:0px;
                 <p >@ all right reserved to the author Basade</p>
         </div>
            </div>
-           
+           <script>
+document.body.style.overflow = 'hidden';
+
+            window.addEventListener('load' , function(){
+  document.getElementById('iframeloader').style.display='none';
+  document.body.style.overflow = 'scroll';
+
+});
+           </script>
            </body>
            </html>
