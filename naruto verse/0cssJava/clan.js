@@ -1,11 +1,11 @@
-window.addEventListener('load' , function(){
-  document.getElementById('iframeloader').style.display='none';
-});
+
 
 let image=document.getElementsByClassName('clanImg');
 let p=document.getElementsByClassName('classimgname');
 
-
+window.addEventListener('load' , function(){
+  document.getElementById('iframeloader').style.display='none';
+});
 
 
 
