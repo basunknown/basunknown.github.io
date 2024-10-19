@@ -1,6 +1,7 @@
 window.addEventListener('load' , function(){
- let preloader= document.getElementById('iframeloader');
+ let preloader= document.getElementsByClassName('fullpage')[0];
  preloader.classList.add('iframeloader1');
+//  preloader.style.display='none';
 
 
 });
@@ -109,12 +110,3 @@ for (let i = 0; i < slideimages.length; i++) {
   myTimeout = setTimeout(slideshow, 4000);
   }
 }
-
-// let thisimages=document.getElementsByTagName('img');
-// for(let u=0; u<thisimages.length; u++){
-//   thisimages[u].src.toLowerCase();
-// }
-
-
-
-
