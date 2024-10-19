@@ -1,10 +1,18 @@
+
+
 let buttono= document.getElementById('characterlistAO');
 buttono.onclick= displaychatacterListO;
 
 let buttonc= document.getElementById('characterlistAC');
 buttonc.onclick= displaychatacterListC;
 
+let loader=  document.getElementById('iframeloader');
 
+window.addEventListener('load' , function(){
+  loader.style.display='none';
+})
+    
+  
 
 let hand = document.getElementsByClassName('handpointed')[0];
 
