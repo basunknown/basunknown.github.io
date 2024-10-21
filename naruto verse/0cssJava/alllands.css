@@ -137,6 +137,7 @@ body{
     background-position:center; */
     /* background-attachment:fixed; */
     scroll-behavior :smooth; 
+    overflow: hidden;
     
 }
 

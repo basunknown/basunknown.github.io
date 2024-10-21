@@ -1,7 +1,10 @@
+// document.getElementsByTagName('body')[0].style.overflow='hidden';
+
 window.addEventListener('load' , function(){
  let preloader= document.getElementsByClassName('fullpage')[0];
  preloader.classList.add('iframeloader1');
 //  preloader.style.display='none';
+document.getElementsByTagName('body')[0].style.overflowY='scroll';
 
 
 });
