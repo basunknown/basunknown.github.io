@@ -763,6 +763,9 @@ hr{
             
         .introinfo{
             width:388px;
+            padding-top: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
             @media  screen and (max-width: 482px) {
 
