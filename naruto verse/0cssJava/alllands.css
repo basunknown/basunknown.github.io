@@ -67,7 +67,7 @@ font-size: 30px;
 font-weight: bold;
 width: fit-content;
 font-family:monospace;
-clip-path: inset(0 45px 0 0);
+clip-path: inset(0 46px 0 0);
 animation: l4 1.2s steps(4) infinite;
 }
 
