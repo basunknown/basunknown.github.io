@@ -134,13 +134,9 @@ body{
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
+    background-position-y: 0px;
     background-attachment: fixed;
     scroll-behavior: smooth;
-    /* width:100%; */
-    /* background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center; */
-    /* background-attachment:fixed; */
     scroll-behavior :smooth; 
     overflow: hidden;
     
@@ -739,7 +735,7 @@ hr{
     text-align: center;
 }
 
-@media  screen and (max-width: 1090px) {
+@media only screen and (max-width: 1090px) {
 
     .landDIV{
         display: block;
@@ -750,7 +746,7 @@ hr{
 
 
 
-    @media  screen and (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
 
         .smallsizesearch{
             display: block;
@@ -770,7 +766,7 @@ hr{
 
 
 
-        @media  screen and (max-width: 640px) {
+        @media only screen and (max-width: 640px) {
             
         .introinfo{
             width:388px;
@@ -778,7 +774,7 @@ hr{
             padding-left: 15px;
             padding-right: 15px;
         }
-            @media  screen and (max-width: 482px) {
+            @media only screen and (max-width: 482px) {
 
 
                 .landmenu{
@@ -881,7 +877,7 @@ hr{
 
 
 
-                @media  screen and (max-width: 210px) {
+                @media only screen and (max-width: 210px) {
                     .introinfo{
                         padding:5px;
                         top: 0px;
