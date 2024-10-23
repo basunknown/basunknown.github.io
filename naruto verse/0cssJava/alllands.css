@@ -127,20 +127,36 @@ animation: l4 1.2s steps(4) infinite;
 
 body{
     user-select: none;
-    background-repeat:no-repeat;
+    /* background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
     background-position-y: 0px;
-    background-attachment:fixed;
+    background-attachment:fixed; */
     scroll-behavior :smooth;
-    margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-        -webkit-overflow-scrolling: touch;
+   -webkit-overflow-scrolling: touch;
     overflow-x: auto;
     overflow-y: scroll;
     
+}
+
+.wallpaper{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    /* background-attachment:fixed; */
+    z-index: -2;
+ width:100%;
+ height: 100%;
+ background-position-y: 0px;
+
+
+ /* background-position-y:4px ; */
+ position:fixed;
+ scroll-behavior: smooth;
+ /* background-color: red; */
 }
 
 @font-face {
