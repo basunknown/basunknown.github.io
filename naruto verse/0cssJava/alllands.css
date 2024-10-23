@@ -131,6 +131,11 @@ animation: l4 1.2s steps(4) infinite;
 body{
     margin:0px; 
     user-select: none;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
     /* width:100%; */
     /* background-repeat:no-repeat;
     background-size:cover;
