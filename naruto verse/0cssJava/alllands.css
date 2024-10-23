@@ -115,48 +115,52 @@ animation: l4 1.2s steps(4) infinite;
   }
 
 .html{
-    position: fixed;
     overflow: hidden;
+    position: fixed;
+
 }
 
-  html,body{
-    margin:0px; 
-    height:100%;
 
-  }
+    html, body {
+        height: 100%;
+     }
 
 body{
-    user-select: none;
+    /* user-select: none; */
     /* background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
     background-position-y: 0px;
     background-attachment:fixed; */
-    scroll-behavior :smooth;
+    /* scroll-behavior :smooth;
     padding: 0;
     border: 0;
     outline: 0;
    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: scroll; */
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+        -webkit-overflow-scrolling: touch;
     overflow-x: auto;
     overflow-y: scroll;
     
 }
 
 .wallpaper{
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-    /* background-attachment:fixed; */
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
     z-index: -2;
- width:100%;
- height: 100%;
- background-position-y: 0px;
-
-
- /* background-position-y:4px ; */
- position:fixed;
- scroll-behavior: smooth;
- /* background-color: red; */
 }
 
 @font-face {
