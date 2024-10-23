@@ -135,10 +135,9 @@ body{
     background-size:cover;
     background-position:center;
     background-position-y: 0px;
-    background-attachment: fixed;
-    scroll-behavior: smooth;
+    background-attachment:fixed;
     scroll-behavior :smooth; 
-    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
     
 }
 
