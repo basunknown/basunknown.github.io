@@ -127,7 +127,7 @@ animation: l4 1.2s steps(4) infinite;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 120%;
+    height: 100%;
     width: 100%;
     margin: 0;
     z-index: -2;
