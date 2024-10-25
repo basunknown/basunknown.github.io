@@ -7,6 +7,7 @@ window.addEventListener('load' , function(){
 document.getElementsByTagName('body')[0].style.overflowY='scroll';
 
 
+
 });
 
 let buttono= document.getElementById('characterlistAO');
@@ -34,8 +35,7 @@ function handgone(){
 // let buttonB= document.getElementById('mainbody');
 // buttonB.onclick= displaychatacterListC;
 
-let buttonIc= document.getElementById('iframecover');
-buttonIc.onclick= displaychatacterListC;
+
 
 let buttonoc= document.getElementById('characterlistAOcontainer');
 
@@ -43,14 +43,15 @@ let buttonoc= document.getElementById('characterlistAOcontainer');
 function displaychatacterListO(){
     // buttonoc.style.display= "none";
   let characterlist = document.getElementById('characterlist');
-  let buttonm= document.getElementById('landmenu');
-buttonm.onclick= displaychatacterListC;
   characterlist.classList.add('landmem');
   characterlist.style.display= "block";
   buttonIc.style.display= "block";
  
 }
 
+for(let i=0; i<5; i++){
+  document.getElementById('forCharacterRemoval'+i).onclick=displaychatacterListC;
+}
 
 function displaychatacterListC(){
     // buttonoc.style.display= "block";
@@ -60,7 +61,7 @@ function displaychatacterListC(){
   setTimeout(function() {
     characterlist.style.display= "none";
     characterlist.classList.remove('landmems');
-  }, 450);
+  }, 550);
   buttonIc.style.display= "none";
 }
 

@@ -10,7 +10,6 @@
 
 
   .loader{
-    top:-20px;
     margin: auto;
     display: block;
     color: aliceblue;
@@ -114,21 +113,14 @@ animation: l4 1.2s steps(4) infinite;
     background: #5f5f5f; 
   }
 
-.html{
-    overflow: hidden;
-    position: absolute;
-}
 
 
-    html, body {
+    html,body {
         height: 100%;
         margin: 0px;
-        
+        overflow: hidden;
+        position: relative;
      }
-
-body{
-        -webkit-overflow-scrolling: touch;
-}
 
 .wallpaper{
     position: fixed;
@@ -138,7 +130,6 @@ body{
     height: 120%;
     width: 100%;
     margin: 0;
-    overflow: hidden;
     z-index: -2;
 }
 
@@ -236,17 +227,6 @@ body{
 }   
 
 
-.iframecover{
-    display:none;
-    width:100%;
-    z-index: 0;
-    top:0px;
-    /* background-color: black; */
-    right:0px;
-    height: 100%;
-    position:fixed;
-    z-index: 1;
-}
 
 
 .smallsizesearch{
@@ -337,6 +317,7 @@ right:0px;
     animation:listsid 0.3s linear;
     box-shadow:2px 2px 10px;
     animation-fill-mode: forwards;
+    background-color: black;
 }
 
 
@@ -353,18 +334,19 @@ right:0px;
     height: 612px;
     z-index: 0;
     animation:listsidin 0.3s linear;
+    background-color: black;
     box-shadow: 2px 2px 10px;
     animation-fill-mode: forwards;
 }
 
 @keyframes listsid{
-    from{width:0px;}
-    to{width:400px;}
+    from{transform:translateX(440px)}
+    to{transform:translateX(0px)}
 }
 
 @keyframes listsidin{
-    from{width:400px;}
-    to{width:0px;}
+    from{transform:translateX(0px)}
+    to{transform:translateX(440px)}
 }
 
 

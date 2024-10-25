@@ -5,7 +5,7 @@ document.getElementsByClassName('door2')[0].style.animationPlayState = "paused";
 
 document.getElementsByClassName('gate')[0].style.animationPlayState = "paused";
 
-document.getElementsByTagName('html')[0].style.animationPlayState = "paused";
+// document.getElementsByTagName('html')[0].style.animationPlayState = "paused";
 
 document.getElementsByClassName('containerscroll')[0].style.animationPlayState = "paused";
 
@@ -26,7 +26,9 @@ document.getElementsByClassName('door2')[0].style.animationPlayState = "running"
 
 document.getElementsByClassName('gate')[0].style.animationPlayState = "running";
 
-document.getElementsByTagName('html')[0].style.animationPlayState = "running";
+// document.getElementsByTagName('html')[0].style.animationPlayState = "running";
+document.getElementsByTagName('body')[0].style.overflowY='scroll';
+
 
 document.getElementsByClassName('containerscroll')[0].style.animationPlayState = "running";
 
