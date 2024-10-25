@@ -233,7 +233,7 @@ animation: l4 1.2s steps(4) infinite;
 
 
 .smallsizesearch{
-    z-index: 4;
+    z-index: 1;
     display: none;
     margin: auto;
     margin-top: 0px;
@@ -733,6 +733,7 @@ hr{
 
         .smallsizesearch{
             display: block;
+            
         }
 
         .LobjectFrame{
