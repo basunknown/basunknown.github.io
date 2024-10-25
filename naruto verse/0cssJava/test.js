@@ -37,15 +37,16 @@ function handgone(){
 
 
 
-let buttonoc= document.getElementById('characterlistAOcontainer');
+
 
 
 function displaychatacterListO(){
-    // buttonoc.style.display= "none";
+  let buttonoc= document.getElementById('characterlistAOcontainer');
+    buttonoc.style.display='none';
   let characterlist = document.getElementById('characterlist');
   characterlist.classList.add('landmem');
   characterlist.style.display= "block";
-  buttonIc.style.display= "block";
+  
  
 }
 
@@ -54,15 +55,15 @@ for(let i=0; i<5; i++){
 }
 
 function displaychatacterListC(){
-    // buttonoc.style.display= "block";
+  let buttonoc= document.getElementById('characterlistAOcontainer');
+    buttonoc.style.display= "block";
   let characterlist = document.getElementById('characterlist');
   // characterlist.classList.remove('landmem');
   characterlist.classList.add('landmems');
   setTimeout(function() {
     characterlist.style.display= "none";
     characterlist.classList.remove('landmems');
-  }, 550);
-  buttonIc.style.display= "none";
+  }, 650);
 }
 
 

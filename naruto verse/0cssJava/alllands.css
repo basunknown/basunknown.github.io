@@ -115,14 +115,13 @@ animation: l4 1.2s steps(4) infinite;
 
 
 
-
         html,body {
             margin: 0px;
             height: 100%;
             overflow: hidden;
             position: relative;
             /* min-height: 4px; */
-            background-color: black;
+            /* background-color: black; */
             scroll-behavior: smooth;
             }
      
@@ -298,8 +297,8 @@ right:0px;
 
 
 .characterposition{
-    width:100vm;
     position: sticky;
+    background-color: #5f5f5f;
     top:0px;
     right:0px;
     z-index: 1;
