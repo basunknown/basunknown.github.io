@@ -57,7 +57,7 @@ function displaychatacterListC(){
   setTimeout(function() {
     characterlist.style.display= "none";
     characterlist.classList.remove('landmems');
-  }, 450);
+  }, 650);
   buttonIc.style.display= "none";
 }
 
