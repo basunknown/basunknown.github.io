@@ -7,11 +7,11 @@ window.addEventListener('load' , function(){
  
  });
 
-let buttono= document.getElementById('characterlistAO');
-buttono.onclick= displaychatacterListO;
-
-let buttonc= document.getElementById('characterlistAC');
-buttonc.onclick= displaychatacterListC;
+ let buttono= document.getElementById('characterlistAOcontainer');
+ buttono.onclick= displaychatacterListO;
+ 
+ let buttonc= document.getElementById('characterlistAC');
+ buttonc.onclick= displaychatacterListC;
 
 
 
@@ -33,34 +33,32 @@ function handgone(){
 // buttonB.onclick= displaychatacterListC;
 
 
-let buttonoc= document.getElementById('characterlistAOcontainer');
+
+let characterlist = document.getElementById('characterlist');
 
 
 function displaychatacterListO(){
-  // buttonoc.style.display= "none";
-let characterlist = document.getElementById('characterlist');
-characterlist.classList.add('landmem');
-characterlist.style.display= "block";
-buttonIc.style.display= "block";
 
+    // buttono.style.display='none';
+ 
+  characterlist.classList.add('landmem');
+  characterlist.style.display= "block";
 }
 
 for(let i=0; i<5; i++){
-document.getElementById('forCharacterRemoval'+i).onclick=displaychatacterListC;
+  document.getElementById('forCharacterRemoval'+i).onclick=displaychatacterListC;
 }
 
 function displaychatacterListC(){
-    // buttonoc.style.display= "block";
-  let characterlist = document.getElementById('characterlist');
+    // buttono.style.display= "block";
+
   // characterlist.classList.remove('landmem');
   characterlist.classList.add('landmems');
   setTimeout(function() {
     characterlist.style.display= "none";
     characterlist.classList.remove('landmems');
-  }, 650);
-  buttonIc.style.display= "none";
+  }, 500);
 }
-
 
 let clansbutton = document.getElementsByClassName('fclansbutton');
 let slideimages =document.getElementsByClassName("slideimages");

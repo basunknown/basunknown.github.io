@@ -1,5 +1,3 @@
-// document.getElementsByTagName('body')[0].style.overflow='hidden';
-
 window.addEventListener('load' , function(){
  let preloader= document.getElementsByClassName('fullpage')[0];
  preloader.classList.add('iframeloader1');
@@ -7,10 +5,9 @@ window.addEventListener('load' , function(){
 document.getElementsByTagName('body')[0].style.overflowY='scroll';
 
 
-
 });
 
-let buttono= document.getElementById('characterlistAO');
+let buttono= document.getElementById('characterlistAOcontainer');
 buttono.onclick= displaychatacterListO;
 
 let buttonc= document.getElementById('characterlistAC');
@@ -37,17 +34,15 @@ function handgone(){
 
 
 
-
+let characterlist = document.getElementById('characterlist');
 
 
 function displaychatacterListO(){
-  let buttonoc= document.getElementById('characterlistAOcontainer');
-    buttonoc.style.display='none';
-  let characterlist = document.getElementById('characterlist');
+
+    // buttono.style.display='none';
+ 
   characterlist.classList.add('landmem');
   characterlist.style.display= "block";
-  
- 
 }
 
 for(let i=0; i<5; i++){
@@ -55,15 +50,14 @@ for(let i=0; i<5; i++){
 }
 
 function displaychatacterListC(){
-  let buttonoc= document.getElementById('characterlistAOcontainer');
-    buttonoc.style.display= "block";
-  let characterlist = document.getElementById('characterlist');
+    // buttono.style.display= "block";
+
   // characterlist.classList.remove('landmem');
   characterlist.classList.add('landmems');
   setTimeout(function() {
     characterlist.style.display= "none";
     characterlist.classList.remove('landmems');
-  }, 650);
+  }, 500);
 }
 
 

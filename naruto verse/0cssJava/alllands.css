@@ -281,21 +281,23 @@ right:0px;
 }
 
 #characterlistAOcontainer{
-    width:100vm;
     position: sticky;
     top:75px;
     z-index:1;
-}
-
-.characterlistO{
     cursor:pointer;
+    background-color: rgba(240, 248, 255, 0);
     background-image: url("../iconcharacter.png");
     background-repeat: no-repeat;
     background-size: cover;
+    border:none;
     width: 85px;
     height: 95px;
     float:right;
 }
+
+/* .characterlistO{
+
+} */
 
 
 .characterposition{
@@ -345,13 +347,13 @@ right:0px;
 }
 
 @keyframes listsid{
-    from{transform:translateX(440px)}
-    to{transform:translateX(0px)}
+    from{transform:translateX(101%)}
+    to{transform:translateX(0%)}
 }
 
 @keyframes listsidin{
-    from{transform:translateX(0px)}
-    to{transform:translateX(440px)}
+    from{transform:translateX(0%)}
+    to{transform:translateX(101%)}
 }
 
 
