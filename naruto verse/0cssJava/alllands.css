@@ -115,13 +115,17 @@ animation: l4 1.2s steps(4) infinite;
 
 
 
-    html,body {
-        height: 100%;
-        margin: 0px;
-        overflow: hidden;
-        position: relative;
-     }
 
+        html,body {
+            margin: 0px;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            /* min-height: 4px; */
+            /* background-color: black; */
+            scroll-behavior: smooth;
+            }
+     
 .wallpaper{
     position: fixed;
     background-repeat: no-repeat;
