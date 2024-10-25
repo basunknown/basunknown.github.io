@@ -122,7 +122,7 @@ animation: l4 1.2s steps(4) infinite;
             overflow: hidden;
             position: relative;
             /* min-height: 4px; */
-            /* background-color: black; */
+            background-color: black;
             scroll-behavior: smooth;
             }
      
