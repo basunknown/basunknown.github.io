@@ -122,8 +122,10 @@ animation: l4 1.2s steps(4) infinite;
             position: relative;
             /* min-height: 4px; */
             /* background-color: black; */
+            user-select: none;
             scroll-behavior: smooth;
             }
+        
      
 .wallpaper{
     position: fixed;
