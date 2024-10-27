@@ -138,23 +138,11 @@ animation: l4 1.2s steps(4) infinite;
   height: 100%;
   overflow: hidden;
   position: relative;
-  min-height: 4px;
-  background-color: black;
+  /* background-color: black; */
   scroll-behavior: smooth;
   background-color:rgb(32, 32, 32);
   }
-   /* .LobjectFrame{
-    position: absolute; */
-    /* left:42%; */
-     /* margin: auto;
-    display: block; */
-    /* background-color: black;
-    width:205px;
-    height:35px;}
 
-    .LobjectFrame:hover{
-      height: fit-content;
-    } */
 
     .mapmenu{
       position: relative; z-index:1; display: block; margin: auto;  text-align: center; box-shadow: 1px 1px 12px black; background-color:rgb(224, 97, 50);  width:1602px;  height:fit-content; min-height: 84px;
@@ -313,6 +301,8 @@ right:0px;
     transform: translateX(-100%);
   }
 }
+
+
 
        /* @media screen and (max-width:1100px) {
         body{zoom:150%;}
@@ -475,6 +465,22 @@ document.body.style.overflow = 'scroll';
 
 
 });
+
+let slideshow=document.getElementsByClassName('slideshow')[0];
+slideshow.onmouseover=stopSlideshow;
+slideshow.onmouseout=playSlideshow;
+
+function stopSlideshow(){
+  document.getElementsByClassName('slide')[0].style.animationPlayState="paused";
+  document.getElementsByClassName('slide1')[0].style.animationPlayState="paused";
+
+}
+
+function playSlideshow(){
+  document.getElementsByClassName('slide')[0].style.animationPlayState="running";
+  document.getElementsByClassName('slide1')[0].style.animationPlayState="running";
+  
+}
 
 
            </script>
