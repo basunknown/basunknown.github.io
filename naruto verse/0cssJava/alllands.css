@@ -152,7 +152,7 @@ animation: l4 1.2s steps(4) infinite;
     height: 63px;
     max-height:fit-content;
     background-color: rgba(255, 255, 255, 0.37);
-    z-index: 4;
+    z-index: 5;
 }
 
 
@@ -232,23 +232,39 @@ animation: l4 1.2s steps(4) infinite;
 }   
 
 
+.iframeCover{
+    position:absolute; 
+    width:220px; 
+    height:63px; 
+    /* background-color: aliceblue;  */
+    top:0; 
+    z-index: 5;
+    margin-left:68%;
+    display:none;
 
+}
 
 .smallsizesearch{
-    z-index: 1;
     display: none;
     margin: auto;
     margin-top: 0px;
-    width: 220px;
+    width: fit-content;
     height:50px;
     border-radius: 10px 10px 10px 10px;
     background-color: rgba(255, 255, 255, 0.37);
+    position: absolute;
+    left:0px;
+    right:0px;
+    z-index: 2;
 }
 
 
 .smallsizesearch iframe{
-    width:228px;
+    width:220px;
     height: 440px;
+    /* background-color: black; */
+
+
 }
 
 #searcherror{
@@ -274,7 +290,7 @@ right:0px;
     /* background-color: #5f5f5f; */
     position:absolute;
     height:1240px;
-    z-index:2;
+    z-index:5;
     right:0px; 
     /* background-color: black; */
     width: fit-content; 
@@ -469,6 +485,7 @@ right:0px;
     margin:auto;
   
     padding: 25px;
+    height:fit-content;
     width:575px;
     height:fit-content;
     z-index: -1;
@@ -735,6 +752,16 @@ hr{
 
     @media only screen and (max-width: 960px) {
 
+
+        .iframeCover{
+            height: 440px;
+            top:auto;
+            left:0px; 
+            right:0px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
         .smallsizesearch{
             display: block;
             
@@ -841,12 +868,15 @@ hr{
                 hr{
                     width:95%;
                 }
-
+/* 
+                .iframeCover{
+                    right:80px;
+                }
                 .smallsizesearch{
                     position: absolute;
                     right:80px;
 
-                }
+                } */
 
                 .hiddenvillagewrap{
                     top:240px;

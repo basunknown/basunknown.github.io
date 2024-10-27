@@ -40,12 +40,12 @@ let characterlist = document.getElementById('characterlist');
 function displaychatacterListO(){
 
     // buttono.style.display='none';
- 
+    document.getElementById('forCharacterRemoval5').style.display="block";
   characterlist.classList.add('landmem');
   characterlist.style.display= "block";
 }
 
-for(let i=0; i<5; i++){
+for(let i=0; i<6; i++){
   document.getElementById('forCharacterRemoval'+i).onclick=displaychatacterListC;
 }
 
@@ -54,6 +54,7 @@ function displaychatacterListC(){
 
   // characterlist.classList.remove('landmem');
   characterlist.classList.add('landmems');
+  document.getElementById('forCharacterRemoval5').style.display="none";
   setTimeout(function() {
     characterlist.style.display= "none";
     characterlist.classList.remove('landmems');
