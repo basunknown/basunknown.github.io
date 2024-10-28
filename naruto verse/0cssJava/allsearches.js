@@ -281,12 +281,18 @@ for(let e=0; e<datalis.length; e++){
            error();      }
        else {
 
+     
         let first='your search: '; 
-        let last='was not found'
-        top.document.getElementById('searcherror').style.display='flex';
+        let last='was not found';
+        top.document.getElementById('searcherror').style.display='block';
 
-        top.document.getElementById('negativedisplay').innerHTML=first + 
-       '<br>"'+ searchvalue +'"<br>'+last;
+        top.document.getElementById('negativedisplay').innerHTML=first;
+       top.document.getElementById('errormessage').innerHTML='"'+searchvalue+'"';
+       top.document.getElementById('negativedisplayConfirmed').innerHTML=last;
+
+    // top.document.getElementById('searcherror').style.display='flex';
+    // top.document.getElementById('negativedisplay').innerHTML=first + 
+    // '<br>"'+ errorred+'"<br>'+last;
 
     }
 
