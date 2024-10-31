@@ -1,4 +1,9 @@
 @font-face {
+  font-family: fonttest0;
+      src: url('../font/Hakubo.ttf');
+  }
+
+@font-face {
   font-family: fonttest1;
     src: url('../font/All Yoko.ttf');
 }
@@ -72,3 +77,23 @@ font-family: fonttest14;
 font-family: fonttest15;
     src: url('../font/night in tokyo/NightinTokyoShadow.ttf');
 }
+
+@font-face {
+  font-family: fonttest16;
+      src: url('../font/Dirtyboy.ttf');
+  }
+
+  @font-face {
+    font-family: fonttest17;
+        src: url('../font/Blackrush.otf');
+    }
+
+    @font-face {
+      font-family: fonttest18;
+          src: url('../font/Magic.ttf');
+      }
+
+      @font-face {
+        font-family: fonttest19;
+            src: url('../font/Amatic.ttf');
+        }

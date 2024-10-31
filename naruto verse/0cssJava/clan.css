@@ -8,8 +8,11 @@
   to{
     overflow:auto;
   } */
-  
 
+
+a{
+  color: rgb(196, 36, 36);
+}
 
   .fullpage{
     display: flex;
@@ -134,6 +137,7 @@ html,body {
   position: relative;
   min-height: 4px;
   background-color: black;
+ 
 
   }
   
@@ -147,11 +151,10 @@ html,body {
    height: 100vh; 
   display:inline-flex; 
   position: fixed; 
-  top:0px; 
-   z-index: 1;
+  top:0px;
    animation:gate 6s linear;
    animation-fill-mode: forwards;
-   z-index: 2;
+   z-index: 3;
 }
 
 @keyframes gate{
@@ -288,12 +291,11 @@ box-shadow:rgb(133, 24, 24) 1px 1px 8px;
     } 
 
     .scrollstick{
-      min-width:65px; height:100%; background-color:rgb(129, 34, 34); box-shadow: 1px 1px 10px; z-index: 0;
+      min-width:65px; height:100%; background-color:rgb(129, 34, 34); box-shadow: 1px 1px 10px; z-index: 2;
       border-radius:100%/ 25px 25px 15px 15px
     }
 
     .scrollcontent{
-      
       animation: conunscroll 2s ease-in-out;
       background-image: url('../clandisplay/0oldtexture.webp');
       animation-fill-mode: forwards ;
@@ -304,9 +306,9 @@ box-shadow:rgb(133, 24, 24) 1px 1px 8px;
         width: 3px;
         margin-top: 14px;
           font-family: sans-serif;
-          overflow: auto;
-          overflow-x: hidden;
+          overflow-y: hidden;
           box-shadow: 1px 1px 8px rgb(88, 88, 62);
+          
     }
 
     @keyframes conunscroll{
@@ -316,23 +318,41 @@ box-shadow:rgb(133, 24, 24) 1px 1px 8px;
     }
 
     .scrollcontentspan{
-   
-      background-image: url('../clandisplay/1oldtexture.webp');
-      width:100%; display: block; 
+width:100%;
+display: block; 
 margin-top:42px;
-background-color:rgb(244, 245, 240);
-color: rgba(97, 13, 13, 0.863); height: 80%;
+background-color:rgba(244, 245, 240, 0.945);
+color: rgb(83, 4, 4);
+ height: 80%;
 box-shadow: 0px 0px 8px rgba(139, 0, 0, 0.705);
-overflow: hidden;
+overflow: none;
+
 
     }
 
-    
+    .paperscreen{
+      pointer-events: none;
+      background-image: url('../clandisplay/0oldtexture.webp');
+      opacity:60%;
+      background-position: center;
+      background-position-y:-188px ;
+      background-color:rgba(244, 245, 240, 0.295);
+      width:100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      z-index: 1;
+      /* background-color: red; */
+     }
+
+
     .scrollcontentp{
-      font-family:Georgia, serif;
-      top:32px; position: relative;  min-width: 500px; margin:auto;
+      top:-315px;
+      position: relative; 
+      min-width: 500px; margin:auto;
       width:99%;
       margin: auto;
+      font-family:fonttest6;
 
     }
 
@@ -372,7 +392,7 @@ overflow: hidden;
 
     .classimgname{
          display: none;
-   
+
         }
 
 
@@ -387,6 +407,8 @@ overflow: hidden;
          transition: 1s;
          pointer-events: none;
          animation-fill-mode: forwards;
+         
+
 
         }
         @keyframes opacityanime{
@@ -399,7 +421,10 @@ overflow: hidden;
         }
 
         .classimgnamep{
-          margin-top:10px; font-size: larger;
+          margin-top:10px;
+          font-size: 25px;
+          font-family: fonttest5;
+          color:rgb(163, 44, 44);
         }
         
 
@@ -424,11 +449,12 @@ overflow: hidden;
           z-index: 1;
           height:55px;
           width:100%;
+          font-family: fonttest9;
           
         }
 
 
-        .tableheadcontainer h3{
+        .tableheadcontainer h2{
           margin: auto;
           position: relative;
           top:14px;
@@ -468,8 +494,9 @@ overflow: hidden;
       /* text-align: center;*/
     } 
 
-    .container h4{
-      text-align: center; color: red; padding-top:35px;
+    .container h2{
+      text-align: center; color: rgb(190, 64, 64); padding-top:45px;
+      font-family: fonttest14;
     }
 
     .jutsu{
@@ -480,6 +507,7 @@ overflow: hidden;
         color: rgb(194, 194, 194); 
       width: 94%;
       margin: auto;
+      font-family: fonttest12;
       }
 
     .clanGif{
@@ -545,6 +573,7 @@ overflow: hidden;
 
     @media screen and (max-width:650px) {
       .scrollcontentp{
+        top:-355px;
         min-width: 150px;
       }
 
@@ -590,7 +619,7 @@ overflow: hidden;
       }
 
       .scrollcontentp{
-        top:8px;
+        top:-315px;
         width: 98%;
         font-size:15px;
         
