@@ -160,9 +160,9 @@
     display: block;
     margin:auto;
     left: 2%;
-    font-size:55px;
+    font-size:60px;
     /* font-family:chiller; */
-    font-family: chiller;
+    font-family: fonttest2;
     width:fit-content;
 }
 
@@ -224,8 +224,10 @@
 }
 
 .map{
+    position: relative;
     float: right;
     height:63px;
+    
 }   
 
 
@@ -294,8 +296,8 @@ right:0px;
     /* background-color: #5f5f5f; */
     position:absolute;
     height:1240px;
-    z-index:5;
-    right:0px; 
+    right:0px;
+    top:0px; 
     /* background-color: black; */
     width: fit-content; 
 }
@@ -326,6 +328,8 @@ right:0px;
     top:0px;
     right:0px;
     z-index: 1;
+    z-index:6;
+
 }
 
 
@@ -345,6 +349,7 @@ right:0px;
     box-shadow:2px 2px 10px;
     animation-fill-mode: forwards;
     background-color: black;
+    font-family: fonttest11;
 }
 
 
@@ -364,6 +369,7 @@ right:0px;
     background-color: black;
     box-shadow: 2px 2px 10px;
     animation-fill-mode: forwards;
+    font-family: fonttest5;
 }
 
 @keyframes listsid{
@@ -382,7 +388,7 @@ right:0px;
     position:absolute;
     z-index: 1; 
     right: 4px; 
-    font-family: sans-serif; 
+    font-family:serif; 
     text-decoration: none; 
     color:yellow;
     width:40px; 
@@ -496,7 +502,8 @@ right:0px;
 }
 .introinfoP{
     text-align:left;
-    font-size: 29px; 
+    font-size: 28px;
+    font-family:serif;
 }
 
 
@@ -519,12 +526,15 @@ background-position-y:0px;
     height:fit-content;
     margin:auto;
     background-color:rgba(255, 255, 255, 0.534);
+    font-family:serif;
+
 }
 
 .hiddenvillagep{
     text-align:justify;
     font-size: 24px;
     position: relative;
+    
 }
 
 .hiddenvillagep1{
@@ -818,6 +828,7 @@ hr{
                     width:400px;
                     z-index: 110;
                     height: 100%;
+                    
                 }
 
 
@@ -826,6 +837,7 @@ hr{
                     height: 92%;
                     overflow-y: scroll;
                     background-color: white;
+                    
                 }
 
                 .link{
