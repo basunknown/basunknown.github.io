@@ -449,7 +449,7 @@ overflow: none;
           z-index: 1;
           height:55px;
           width:100%;
-          font-family: fonttest9;
+          
           
         }
 
@@ -458,7 +458,8 @@ overflow: none;
           margin: auto;
           position: relative;
           top:14px;
-          text-align: center; 
+          text-align: center;
+          font-family: fonttest9;
         }
 
 
