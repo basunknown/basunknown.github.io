@@ -322,7 +322,7 @@ right:0px;
 #characterlistAOcontainer{
     position: sticky;
     top:75px;
-    z-index:1;
+    z-index:2;
     cursor:pointer;
     background-color: rgba(240, 248, 255, 0);
     background-image: url("../iconcharacter.png");
