@@ -345,7 +345,7 @@ right:0px;
     top:0px;
     right:0px;
     z-index:45;
-    height: 100vh;
+    height: 92%;
 
 }
 
@@ -353,15 +353,14 @@ right:0px;
 
 .landmem{
     /* background-color: #5f5f5f; */
-    background-color:white;
-    position: absolute;
+
     top:0px;
     bottom: 0px;
     right: 0px;
     width:418px;
-    height:100vh;
+    min-height: 80px;
+    height:fit-content;
     display: none;
-    z-index: 0;
     animation:listsid 0.3s linear;
     box-shadow:2px 2px 10px;
     animation-fill-mode: forwards;
@@ -370,14 +369,13 @@ right:0px;
 
 
 .landmems{
-    background-color:white;
-    position: absolute;
+
     top:0px;
     bottom: 0px;
     right: 0px;
     width:418px;
-    height:100vh;
-    z-index: 0;
+    min-height: 80px;
+    height:fit-content;
     animation:listsidin 0.3s linear;
     box-shadow: 2px 2px 10px;
     animation-fill-mode: forwards;
@@ -418,26 +416,27 @@ right:0px;
 
 
 .titlecharacterlist{
-    position:absolute;
+    position: relative;
     background-color:white;
     color:darkblue;
     border:0px;
     box-shadow:0px 0px 4px black;
     height:50px;
-    width:418px;
+    width:100%;
+    z-index: 2;
 }
 
 
 .listofcharacterwrap{
     box-shadow:0px 0px 4px black;
-    min-height:50px;
-    height:97%;
+    background-color: aliceblue;
+    height:calc(100vh - 50px);
+    top: 0px;
     overflow-y: scroll;
     width:418px;
-    z-index: -1;
     position:relative;
     display:block;
-
+    bottom:0px;
 }
 
 
@@ -817,11 +816,15 @@ hr{
                 }
 
 
+                .landmem, landmems{
+                    width: 100vw;
+
+                }
 
 
                 .listofcharacterwrap{
-                    width:400px;
-                    height:100%;
+                    width:100%;
+                    right: 0px;
                     overflow-y: scroll;
                     background-color: white;
                     
