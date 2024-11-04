@@ -7,6 +7,8 @@ document.getElementsByTagName('body')[0].style.overflowY='scroll';
 
 });
 
+let overlay= document.getElementsByClassName("filteroverlay")[0];
+
 let buttono= document.getElementById('characterlistAOcontainer');
 buttono.onclick= displaychatacterListO;
 
@@ -27,12 +29,6 @@ function handgone(){
 }}
 
 
-// clansbutton
-// slideimages
-// let buttonB= document.getElementById('mainbody');
-// buttonB.onclick= displaychatacterListC;
-
-
 
 let characterlist = document.getElementById('characterlist');
 
@@ -40,6 +36,7 @@ let characterlist = document.getElementById('characterlist');
 function displaychatacterListO(){
 
     // buttono.style.display='none';
+    overlay.style.display='block';
     document.getElementById('forCharacterRemoval5').style.display="block";
   characterlist.classList.add('landmem');
   characterlist.style.display= "block";
@@ -51,12 +48,12 @@ for(let i=0; i<6; i++){
 
 function displaychatacterListC(){
     // buttono.style.display= "block";
-
+    overlay.style.display='';
   // characterlist.classList.remove('landmem');
   characterlist.classList.add('landmems');
   document.getElementById('forCharacterRemoval5').style.display="none";
   setTimeout(function() {
-    characterlist.style.display= "none";
+    characterlist.style.display= "";
     characterlist.classList.remove('landmems');
   }, 500);
 }

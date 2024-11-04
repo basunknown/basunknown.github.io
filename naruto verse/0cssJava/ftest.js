@@ -7,6 +7,8 @@ window.addEventListener('load' , function(){
  
  });
 
+ let overlay= document.getElementsByClassName("filteroverlay")[0];
+
  let buttono= document.getElementById('characterlistAOcontainer');
  buttono.onclick= displaychatacterListO;
  
@@ -40,6 +42,7 @@ let characterlist = document.getElementById('characterlist');
 function displaychatacterListO(){
 
     // buttono.style.display='none';
+    overlay.style.display='block';
     document.getElementById('forCharacterRemoval5').style.display="block";
   characterlist.classList.add('landmem');
   characterlist.style.display= "block";
@@ -51,7 +54,7 @@ for(let i=0; i<6; i++){
 
 function displaychatacterListC(){
     // buttono.style.display= "block";
-
+    overlay.style.display='';
   // characterlist.classList.remove('landmem');
   characterlist.classList.add('landmems');
   document.getElementById('forCharacterRemoval5').style.display="none";
