@@ -827,6 +827,7 @@ hr{
                     right: 0px;
                     overflow-y: scroll;
                     background-color: white;
+                    height:calc(100vh - 50px);
                     
                 }
 
