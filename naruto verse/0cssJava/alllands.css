@@ -817,7 +817,7 @@ hr{
 
 
                 .landmem,.landmems{
-                    width: 100vw;
+                    width: 100%;
                 }
 
 
@@ -826,7 +826,7 @@ hr{
                     right: 0px;
                     overflow-y: scroll;
                     background-color: white;
-                    height:calc(100vh - 50px);
+                    height:calc(100% - 50px);
                     
                 }
 
