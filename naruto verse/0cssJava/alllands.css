@@ -245,7 +245,6 @@
 .map{
     float: right;
     height:63px;
-    z-index: 0;
     
 }   
 
@@ -794,6 +793,7 @@ hr{
             right:0px;
             margin-left:auto;
             margin-right:auto;
+            /* background-color: black; */
         }
 
         .smallsizesearch{
@@ -817,13 +817,6 @@ hr{
             padding-right: 15px;
         }
             @media screen and (max-width: 482px) {
-
-
-                .landmenu{
-                    z-index: 0;
-
-                }
-
 
                 .landmem,.landmems{
                     width: 100%;
