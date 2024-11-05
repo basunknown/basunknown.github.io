@@ -91,6 +91,7 @@
 ::-webkit-scrollbar{
     background-color: rgba(216, 213, 213, 0.74);
     border-radius: 18px;
+    box-shadow:0px 0px 4px black;
   }
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgb(0, 0, 0);
@@ -356,7 +357,7 @@ right:0px;
     display: none;
     width:418px;
     min-height: 80px;
-    height:fit-content;
+    height:100%;
     animation:listsid 0.3s linear;
     box-shadow:2px 2px 10px;
     animation-fill-mode: forwards;
@@ -367,7 +368,7 @@ right:0px;
 .landmems{
     width:418px;
     min-height: 80px;
-    height:fit-content;
+    height:100%;
     animation:listsidin 0.3s linear;
     box-shadow: 2px 2px 10px;
     animation-fill-mode: forwards;
@@ -435,10 +436,19 @@ right:0px;
 
 }
 
+/* .listofcharacterwrap::-webkit-scrollbar-track {
+    box-shadow:  0px 0px 5px rgb(0, 0, 0);
+  } */
+
 .listofcharacterwrap::-webkit-scrollbar{
-    width:8px;
+    width:15px;
+    box-shadow:2px 2px 10px black;
 }
-.listofcharacterwrap::-webkit-scrollbar-track-piece{ margin-top: 50.5px;}
+
+.listofcharacterwrap::-webkit-scrollbar-track-piece{ 
+    margin-top: 50px;
+}
+
 
 .link{
     display: flex;
@@ -822,9 +832,6 @@ hr{
 
                 .listofcharacterwrap{
                     width:100%;
-                    right: 0px;
-                    overflow-y: scroll;
-                    background-color: white;
                     
                 }
 
