@@ -115,7 +115,7 @@
      /* position:fixed; */
      
      position: fixed;
-     background-color: rgba(75, 77, 10, 0.76);
+     background-color: rgba(0, 0, 0, 0.788);
      top:0px;
      right:0px;
      width:100vw;
@@ -828,7 +828,7 @@ hr{
                     right: 0px;
                     overflow-y: scroll;
                     background-color: white;
-                    height:100%;
+                    height:cal(100%-50px);
                     
                 }
 
