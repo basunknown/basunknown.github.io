@@ -345,7 +345,7 @@ right:0px;
     top:0px;
     right:0px;
     z-index:45;
-    height: 92%;
+    height: 100%;
 
 }
 
@@ -395,7 +395,7 @@ right:0px;
 
 .characterlistA{
     top:85px; 
-    position:absolute;
+    position:fixed;
     z-index: 1; 
     right: 22px; 
     font-family:serif; 
@@ -416,7 +416,7 @@ right:0px;
 
 
 .titlecharacterlist{
-    position: relative;
+    position: fixed;
     background-color:white;
     color:darkblue;
     border:0px;
@@ -426,26 +426,35 @@ right:0px;
     z-index: 2;
 }
 
+/* .titlecharacterlist::-webkit-scrollbar-track{
+   height: 15px;
+} */
+
 
 .listofcharacterwrap{
     box-shadow:0px 0px 4px black;
     background-color: aliceblue;
-    height:calc(100vh - 50px);
+    height:100%;
     top: 0px;
-    overflow-y: scroll;
+    overflow: auto;
     width:418px;
     position:relative;
     display:block;
     bottom:0px;
+
+
 }
 
-
+.listofcharacterwrap::-webkit-scrollbar{
+    width:8px;
+}
+.listofcharacterwrap::-webkit-scrollbar-track-piece{ margin-top: 50.5px;}
 
 .link{
     display: flex;
     box-shadow:0px 0px 4px black;
     height:150px;
-    width:400px;
+    width:100%;
 }
 
 
@@ -468,7 +477,7 @@ right:0px;
 .imageH4{
     /* position: relative; */
     width:35%;
-    text-align: left;
+    text-align: center;
    padding-left:10%;
    padding-top: 10%;
    
@@ -826,7 +835,7 @@ hr{
                     right: 0px;
                     overflow-y: scroll;
                     background-color: white;
-                    height:calc(100% - 50px);
+                    height:100%;
                     
                 }
 

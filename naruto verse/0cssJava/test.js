@@ -5,6 +5,7 @@ window.addEventListener('load' , function(){
 document.getElementsByTagName('body')[0].style.overflowY='scroll';
 
 
+
 });
 
 let overlay= document.getElementsByClassName("filteroverlay")[0];
