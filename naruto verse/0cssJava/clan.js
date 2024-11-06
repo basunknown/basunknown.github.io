@@ -1,3 +1,8 @@
+window.oncontextmenu=disablerightclick;
+
+function disablerightclick(){
+        return false;
+}
 
 document.getElementsByClassName('door1')[0].style.animationPlayState = "paused";
 

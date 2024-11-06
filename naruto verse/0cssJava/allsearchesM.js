@@ -1,3 +1,9 @@
+window.oncontextmenu=disablerightclick;
+
+function disablerightclick(){
+        return false;
+}
+
 let box=document.getElementById('searchbox');
 let databoxlist=document.getElementById("divdatalist");
 box.onkeydown=selecting;

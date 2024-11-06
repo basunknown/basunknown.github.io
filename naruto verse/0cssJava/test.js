@@ -1,3 +1,9 @@
+window.oncontextmenu=disablerightclick;
+
+function disablerightclick(){
+        return false;
+}
+
 window.addEventListener('load' , function(){
  let preloader= document.getElementsByClassName('fullpage')[0];
  preloader.classList.add('iframeloader1');

@@ -482,7 +482,9 @@ right:0px;
     padding-left: 8px;
 }
 
-
+.characternames p{
+    font-size: 18px;
+}
 
 /* first page */
 
@@ -526,6 +528,11 @@ right:0px;
 
 
 /* second page */
+section
+.needed{
+display: none;
+}
+
 .secondpage{
     position:static;
     width:100%;
