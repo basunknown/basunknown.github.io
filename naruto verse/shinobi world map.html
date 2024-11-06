@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="0cssJava\fonts.css">
 
         
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width-width, initial-scale=01">
 
     <!-- <script src="0cssJava\mapsearch.js" defer></script> -->
 
@@ -82,16 +82,16 @@
 
 
 
-  .text {
-    font-size: 30px;
-    font-weight: bold;
-  width: fit-content;
-    font-family:monospace;
-    clip-path: inset(0 28% 0 0);
-    animation: l4 1.5s steps(4) infinite;
-  }
-  
-  @keyframes l4 {to{clip-path: inset(0 -8% 0 0)}}
+     .text {
+font-size: 30px;
+font-weight: bold;
+width: fit-content;
+font-family:monospace;
+clip-path: inset(0 45px 0 0);
+animation: l4 1.2s steps(4) infinite;
+}
+
+@keyframes l4 {to{clip-path: inset(0 -8px 0 0)}}
 
 
 .iframeloader1{
@@ -112,14 +112,14 @@
 }
 
 
+
 ::-webkit-scrollbar{
     background-color: rgba(192, 159, 97, 0.5);
     border-radius: 18px;
   }
+
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgb(0, 0, 0);
-  
-  
   }
    
   
@@ -138,17 +138,18 @@
 
 
    html,body {
-  height: 100%;
   position: relative;
+  overflow: hidden;
+  height: 100%;
+
   /* background-color: black; */
   scroll-behavior: smooth;
-  background-color:rgb(224, 97, 50);
-
+  background-color:rgb(32, 32, 32);
   }
 
 
     .mapmenu{
-      position: relative; z-index:1; display: block; margin: auto;  text-align: center; box-shadow: 1px 1px 12px black; background-color:rgb(224, 97, 50);  width:1602px;  height:fit-content; min-height: 84px;
+      position: relative; z-index:1; display: block; margin: auto;  text-align: center; box-shadow: 1px 1px 12px black; background-color:rgb(224, 97, 50);  width:1600px;  height:fit-content; min-height: 84px;
     }
 
     .mapmenup{
@@ -157,7 +158,7 @@
     }
 
     .line{
-      width:100%; min-width:1602px;  position:absolute; background-color:white; text-align:center; height:27px; z-index: 1; box-shadow:1px 1px 12px;
+      width:100%; width:1600px;  position:absolute; background-color:white; text-align:center; height:27px; z-index: 1; box-shadow:1px 1px 12px;
     }
 
     .searchcontainer{
@@ -205,7 +206,7 @@ right:0px;
     display: block;
     /* width:100%; */
     margin:auto;
-    min-width:1600px;
+    width:1600px;
     height:905px;
     background-color: black;
     
@@ -228,34 +229,41 @@ right:0px;
 
 
     .footer{
-            position: static;
-            display: block;
-            margin:auto;
-            width:1602px;
+            display: flex;
+            width:1600px;
             font-size:12px;
             color: antiquewhite;
-            /* display:block; */
-            padding-top: 8%;
-            padding-bottom:0%;
-            height:30%;
+            height:150px;
             background-color:rgb(32, 32, 32);
+            align-items: center;
+            padding-top: 42px;
+        }
+
+        .footercontent{
+          height: fit-content; width:80%; display: block; margin: auto;
+          
         }
 
 
         .pcontainer{
-            display:block; margin:auto;  width:40%;
+            display:block; margin:auto;  width:100%;
+            /* background-color: red; */
         }
 
 
           .pcontainer p{
-            text-align: justify;
+            
+            display:block; 
+            margin:auto;
+            width: 40%;
+            text-align: left;
            }
 
                     .icon{
-                        width:119px;
-                        height: 54px;
-                        display:block;
-                        margin:auto;
+                      display:block;
+                      margin:auto;
+                        width:fit-content;
+                        margin-top:10px ;
                     }
 
                     .icon img{
@@ -263,24 +271,28 @@ right:0px;
                     }
 
         .footercopyright{
-            display:block;
-            margin:auto;
-            position:relative;
-            top:2%;
+          display:block;
+          margin:auto;
+          width: 100%;
+            /* background-color: #5f5f5f; */
         }
 
        hr{
+        margin-top:22px ;
         width:40%;
         border: solid gray 0.1px;
        }
 
        .footercopyright p{
+        display:block;
+            margin:auto;
         text-align: center;
+        width:45%;
        }
 
        
 .slideshow{
-  display: flex; background-color:rgb(32, 32, 32); margin:auto; width:1602px; overflow: hidden;
+  display: flex; background-color:rgb(32, 32, 32); margin:auto; width:1600px; overflow: hidden;
 }
 
 
@@ -314,10 +326,15 @@ right:0px;
 
                /* min-width:225px;
         width:100%; */
-       @media screen and (max-width:740px) {
 
+
+       @media screen and (max-width:940px) {
+        ::-webkit-scrollbar{
+   height: 0px;
+  }
+        /* html,body{
+scrollbar-width: 45px;     } */
        .line{
-        min-width:225px;
         width:100%;
        
       }
@@ -326,7 +343,6 @@ right:0px;
       }
 
        .iframehere{
-        min-width:225px;
         width:100%;
         height: 900px;
        }
@@ -344,10 +360,6 @@ right:0px;
        .iframehere{
         height: 700px;
        }
-
-       .mapmenu,.slideshow,.footer{  min-width:225px;
-       width:100%;}
-      
       
        } 
 
@@ -360,7 +372,7 @@ right:0px;
 </head>
 
 
-<body id="js" style="background-color: grey;">
+<body id="js">
                   <div class="fullpage">
 
 
@@ -434,7 +446,7 @@ right:0px;
                            </div>
 
 
-<iframe class="iframehere" src="map.html">
+<iframe frameBorder="0" class="iframehere" src="map.html">
 </iframe>
 
 <!-- <div class="slideshow">
@@ -445,7 +457,7 @@ right:0px;
 
     
         <div class="footer">
-
+<div class="footercontent">
             <div class="pcontainer">
                 <p>
                 I can creat a simple website like this and send the codes to you. I can help you with image editing and video subtitling.
@@ -458,12 +470,12 @@ right:0px;
                 </div>
                 
                 <div class="footercopyright">
-                <hr>
+                  <hr>
                 <p >@ all right reserved to the author Basade</p>
         </div>
            </div>
+           </div>
            <script>
-            
 
 window.addEventListener('load' , function(){
  let preloader= document.getElementsByClassName('fullpage')[0];
