@@ -518,59 +518,73 @@ overflow: none;
     .nojutsu{
       width:115px;
     }
-      .footer{
-    position: static;
-    display: block;
-    width:100%;
-    font-size:12px;
-    min-width: 178px;
-    color: antiquewhite;
-    /* display:block; */
-    padding-top: 5%;
-    padding-bottom:0%;
-    height:30%;
-    background-color:rgb(32, 32, 32);
+  
+    .footer{
+      display: flex;
+      width:100%;
+      font-size:12px;
+      color: antiquewhite;
+      height:150px;
+      background-color:rgb(32, 32, 32);
+      align-items: center;
+      padding-top: 42px;
   }
-
-
-    .pcontainer{
-      display:block; margin:auto;  width:40%;
+  
+  .footercontent{
+      height: fit-content; width:40%; display: block; margin: auto;
+      
     }
-
-
-    .pcontainer p{
-      text-align: justify;
-    }
-
-    .icon{
-      width:119px;
-      height: 54px;
+  
+  .pcontainer{
+      display:block; margin:auto;  width:100%;
+      /* background-color: red; */
+  }
+  
+  
+  
+  .pcontainer p{
+      display:block; 
+      margin:auto;
+      width: 40%;
+      text-align: left;
+     }
+  
+     .icon{
       display:block;
       margin:auto;
+        width:fit-content;
+        margin-top:10px ;
     }
-
-    .icon img{
+  
+  .icon img{
       width:30px;
-    }
-
-    .footercopyright{
+  }
+  
+  .footercopyright{
       display:block;
       margin:auto;
-      position:relative;
-      top:2%;
+      width: 100%;
+        /* background-color: #5f5f5f; */
     }
-
+  
     hr{
+      margin-top:22px ;
       width:40%;
       border: solid gray 0.1px;
-    }
-
-    .footercopyright p{
+     }
+  
+     .footercopyright p{
+      display:block;
+          margin:auto;
       text-align: center;
-    }
+      width:45%;
+     }
+  
 
-
+     
+     
     @media screen and (max-width:650px) {
+      
       .scrollcontentp{
         top:-355px;
         min-width: 150px;
@@ -584,10 +598,29 @@ overflow: none;
       top: 9vh;
         height: 500px;
       }
-    }   
+    }
 
+   
+
+    .footercontent{
+      width: 59%;
+    }
+
+    .footer{
+      height: fit-content;
+    }
 
       @media screen and (max-width:580px) {
+
+
+        .footercontent{
+          width: 100%;
+        }
+
+
+        hr{
+          width: 42%;
+        }
 
         .classimgname{
          display: none;   

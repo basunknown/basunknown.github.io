@@ -712,44 +712,52 @@ background-color: rgb(255, 145, 0); position:relative; width:50%; top:25%; heigh
 /* footer */
 
 .footer{
-    position: static;
+    display: flex;
+    width:100%;
     font-size:12px;
     color: antiquewhite;
-    width:100%;
-    /* display:block; */
-    padding-top: 45px;
-
-    height:175px ;
+    height:150px;
     background-color:rgb(32, 32, 32);
+    align-items: center;
+    padding-top: 42px;
 }
 
 .footer1{
-    position: relative;
+    display: flex;
+    width:100%;
     font-size:12px;
     color: antiquewhite;
-    width:100%;
-    margin-top: 100vh;
-    /* display:block; */
-    padding-top: 45px;
-    height:175px ;
+    height:150px;
     background-color:rgb(32, 32, 32);
+    align-items: center;
+    padding-top: 42px;
 }
 
+.footercontent{
+    height: fit-content; width:60%; display: block; margin: auto;
+    
+  }
+
 .pcontainer{
-    display:block; margin:auto;  width:354px;
+    display:block; margin:auto;  width:100%;
+    /* background-color: red; */
 }
+
 
 
 .pcontainer p{
-    text-align: justify;
-}
+    display:block; 
+    margin:auto;
+    width: 40%;
+    text-align: left;
+   }
 
-.icon{
-    width:119px;
-    height: 54px;
+   .icon{
     display:block;
     margin:auto;
-}
+      width:fit-content;
+      margin-top:10px ;
+  }
 
 .icon img{
     width:30px;
@@ -758,18 +766,22 @@ background-color: rgb(255, 145, 0); position:relative; width:50%; top:25%; heigh
 .footercopyright{
     display:block;
     margin:auto;
-    position:relative;
-    top:5px;
-}
+    width: 100%;
+      /* background-color: #5f5f5f; */
+  }
 
-hr{
-    width:325px;
+  hr{
+    margin-top:22px ;
+    width:40%;
     border: solid gray 0.1px;
-}
+   }
 
-.footercopyright p{
+   .footercopyright p{
+    display:block;
+        margin:auto;
     text-align: center;
-}
+    width:45%;
+   }
 
 @media screen and (max-width: 1090px) {
 
@@ -809,7 +821,9 @@ hr{
 
 
         @media screen and (max-width: 640px) {
-            
+            .footercontent{
+                width: 100%;
+            }
         .introinfo{
             width:388px;
             padding-top: 1px;
@@ -817,7 +831,15 @@ hr{
             padding-right: 15px;
         }
             @media screen and (max-width: 482px) {
+                
+                .footer{
+                    height:fit-content;
+                }
+             
 
+                hr{
+                    width: 48%;
+                }
                 .listofcharacterwrap::-webkit-scrollbar{
                    width: 10px;
                 }
@@ -879,10 +901,7 @@ hr{
                     width:154px;
                 }
 
-                hr{
-                    width:95%;
-                }
-/* 
+           
                 .iframeCover{
                     right:80px;
                 }
@@ -932,13 +951,10 @@ hr{
                         font-size:50%;
                     }
 
-                    .footer{
-                        height:125px;
-                    }
 
-                    hr{
-                        width:95%;
-                    }
+                    
+
+                
 
                     .footercopyright{
                         font-size:50%;
