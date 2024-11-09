@@ -4,6 +4,9 @@ function disablerightclick(){
         return false;
 }
 
+// document.getElementsByClassName("scrollcontent")[0].scrollLeft='300';
+// document.getElementsByClassName("scrollcontentp")[0].style.width='657px';
+
 document.getElementsByClassName('door1')[0].style.animationPlayState = "paused";
 
 document.getElementsByClassName('door2')[0].style.animationPlayState = "paused";

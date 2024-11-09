@@ -97,3 +97,22 @@ font-family: fonttest15;
         font-family: fonttest19;
             src: url('../font/Amatic.ttf');
         }
+
+        @font-face{
+            font-family: fonttest20;
+            src: url('../font/Ledira Demo.otf');
+        }
+        @font-face{
+            font-family: fonttest21;
+            src: url('../font/Mahameru.otf');
+        }
+        
+        @font-face{
+            font-family: fonttest22;
+            src: url('../font/Ainsley.ttf');
+        }
+        @font-face{
+            font-family: fonttest23;
+            src: url('../font/Brush Sharp.otf');
+        }
+        

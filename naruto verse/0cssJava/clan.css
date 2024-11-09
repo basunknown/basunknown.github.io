@@ -137,6 +137,7 @@ html,body {
   position: relative;
   min-height: 4px;
   background-color: black;
+  user-select: none; 
  
 
   }
@@ -207,7 +208,7 @@ right:-100%;
 }
 
     .clanMenu{
- user-select: none; 
+
  height:63px;
  text-align:center; 
  box-shadow:1px 1px 5px ;
@@ -295,6 +296,11 @@ box-shadow:rgb(133, 24, 24) 1px 1px 8px;
       border-radius:100%/ 25px 25px 15px 15px
     }
 
+
+    ::-webkit-scrollbar{
+     height: 0px;
+    }
+
     .scrollcontent{
       animation: conunscroll 2s ease-in-out;
       background-image: url('../clandisplay/0oldtexture.webp');
@@ -305,7 +311,7 @@ box-shadow:rgb(133, 24, 24) 1px 1px 8px;
         font-size:22px; 
         width: 3px;
         margin-top: 14px;
-          font-family: sans-serif;
+        display: block;
           overflow-y: hidden;
           box-shadow: 1px 1px 8px rgb(88, 88, 62);
           
@@ -323,11 +329,9 @@ display: block;
 margin-top:42px;
 background-color:rgba(244, 245, 240, 0.945);
 color: rgb(83, 4, 4);
- height: 80%;
+height: 80%;
 box-shadow: 0px 0px 8px rgba(139, 0, 0, 0.705);
 overflow: none;
-
-
     }
 
     .paperscreen{
@@ -347,10 +351,10 @@ overflow: none;
 
 
     .scrollcontentp{
-      top:-315px;
+      top:-92%;
       position: relative; 
-      min-width: 500px; margin:auto;
-      width:99%;
+      margin:auto;
+      width:705px;
       margin: auto;
       font-family:fonttest6;
 
@@ -473,6 +477,16 @@ overflow: none;
 
     }
 
+    .tablecontainer::-webkit-scrollbar{
+      background-color: rgb(167, 5, 5);
+      width: 5px;
+    }
+
+    .tablecontainer::-webkit-scrollbar-thumb {
+      background: rgba(185, 185, 34, 0.726);
+    
+    }
+
     .charactercontainer a{
       cursor:context-menu;
     }
@@ -521,6 +535,7 @@ overflow: none;
   
 
     .footer{
+      font-family: sans-serif;
       display: flex;
       width:100%;
       font-size:12px;
@@ -587,12 +602,19 @@ overflow: none;
   text-align: center;
   width:100%;
   }
+
+  @media screen and (max-width:900px) {
+    .scrollcontentp{
+      width: fit-content;}
+  }
+
      
     @media screen and (max-width:650px) {
       
       .scrollcontentp{
-        top:-355px;
         min-width: 150px;
+        top:-95%;
+        font-size: 20px;
       }
 
       .scrollcontent{
@@ -600,7 +622,6 @@ overflow: none;
         }
 
     .containerscroll{
-      top: 9vh;
         height: 500px;
       }
     }
@@ -622,7 +643,7 @@ overflow: none;
 
         }
  
-        .scrollcontent{
+         .scrollcontent{
           height:95%;
         }
 
@@ -636,10 +657,9 @@ overflow: none;
       }
 
       .scrollcontentp{
-        top:-315px;
         width: 98%;
         font-size:15px;
-        
+         
       }
 
         .container{
