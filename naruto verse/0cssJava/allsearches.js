@@ -20,7 +20,6 @@ let datalis=document.getElementsByClassName('optionlist')
 
 //anything that matches search appears in here
 function keysof(){
-    error()
     let e=0;
     databoxlist.style.display="block";
     
@@ -53,7 +52,7 @@ else if(showsits.toLowerCase().includes(box.value.toLowerCase().trimStart())){
     
 }else{
 
-    datalis[i].style.display="none";
+    // datalis[i].style.display="none";
 
 }
 
@@ -284,21 +283,19 @@ for(let e=0; e<datalis.length; e++){
         top.window.location = inlocations+searchvalue+index;
         }else if(searchvalue==""){
 
-           error();      }
+           error();  
+        
+        }
        else {
 
      
-        let first='your search: '; 
+        let first='your search:'; 
         let last='was not found';
         top.document.getElementById('searcherror').style.display='block';
 
         top.document.getElementById('negativedisplay').innerHTML=first;
        top.document.getElementById('errormessage').innerHTML='"'+searchvalue+'"';
        top.document.getElementById('negativedisplayConfirmed').innerHTML=last;
-
-    // top.document.getElementById('searcherror').style.display='flex';
-    // top.document.getElementById('negativedisplay').innerHTML=first + 
-    // '<br>"'+ errorred+'"<br>'+last;
 
     }
 
