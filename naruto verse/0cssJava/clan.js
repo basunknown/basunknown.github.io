@@ -1,46 +1,32 @@
 window.oncontextmenu=disablerightclick;
 let scrollcontentpLength= document.getElementsByClassName("scrollcontentp")[0];
-let scrollcontentpWidth= document.getElementsByClassName("scrollcontentp")[0].clientWidth;
-let bodyWidth= document.getElementsByTagName("body")[0].clientWidth;
-let scrollcontentspan=document.getElementsByClassName("scrollcontentspan")[0];
-let newWidth=(bodyWidth*0.95)-130;
+// let scrollcontentpWidth= document.getElementsByClassName("scrollcontentp")[0].clientWidth;
+// let bodyWidth= document.getElementsByTagName("body")[0].clientWidth;
+// let scrollcontentspan=document.getElementsByClassName("scrollcontentspan")[0];
+// let newWidth=(bodyWidth*0.95)-130;
+
+// scrollcontentpLength.style.width=scrollcontentpWidth+"px";
+
+// alert(scrollcontentpWidth);
 
 // alert(bodyWidth);
 
 // alert(newWidth );
 
-if(scrollcontentpLength.textContent.length<230){
-  window.addEventListener("resize", resizeWindow);
-
-  document.getElementsByClassName("scrollcontentp")[0].style.width="400px";
-  document.getElementsByClassName("scrollcontentp")[0].style.marginLeft="7px";
+if(scrollcontentpLength.textContent.length < 215){
+  document.getElementsByClassName("scrollcontentp")[0].style.width="250px";
   document.getElementsByClassName("scrollcontentp")[0].style.columnCount=1;
 
-if (screen.width < 768){
-  document.getElementsByClassName("scrollcontentp")[0].style.marginLeft="7px";
-  document.getElementsByClassName("scrollcontentp")[0].style.width=newWidth+"px";
-}
+// if (screen.width < 768){
+//   document.getElementsByClassName("scrollcontentp")[0].style.width=newWidth+"px";
+//  }
 
-
-function resizeWindow(){
-
-  if (screen.width < 768){
-    document.getElementsByClassName("scrollcontentp")[0].style.marginLeft="7px";
-  document.getElementsByClassName("scrollcontentp")[0].style.width=newWidth+"px";
-  }else{
-    document.getElementsByClassName("scrollcontentp")[0].style.backgroundColor = "";
-
-  }
-}
-
-}
-else if(scrollcontentpLength.textContent.length<320){
-  document.getElementsByClassName("scrollcontentp")[0].style.columnCount=2;
-  
+}else if(scrollcontentpLength.textContent.length < 382){
+  // alert(scrollcontentpLength.textContent.length);
+  document.getElementsByClassName("scrollcontentp")[0].style.width= 450 +"px";
 
 }else{
-  document.getElementsByClassName("scrollcontentp")[0].style.columnCount=3;
-
+  document.getElementsByClassName("scrollcontentp")[0].style.width=750 +"px";
 }
 
 
