@@ -45,9 +45,9 @@ let pos;
 
 
 function displaychatacterListO(){
-  overlay.style.display= "block";
-  iframecover.style.display="block";
-  characterlist.style.display= "block";
+  overlay.style.display= "flex";
+  iframecover.style.display="flex";
+  characterlist.style.display= "flex";
   pos=104;
 
   out();
