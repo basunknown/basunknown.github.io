@@ -1,0 +1,562 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title>
+            hidden rain village
+        </title>
+        <meta name="viewport" content="
+        width=device-width, initial-scale=1.0">
+                <!-- <link rel="stylesheet" type="text/css" href="0cssJava\alllands.css"> -->
+
+<style>
+ 
+
+
+   
+  
+
+
+
+  .filteroverlay{
+     /* position:fixed; */
+     
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.822);
+     top:0px;
+     right:0px;
+     width:100vw;
+     height: 100vh;
+     z-index: 45;
+     pointer-events: none;
+     display: none
+ }
+
+        html,body {
+            margin: 0px;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            /* min-height: 4px; */
+            /* background-color: black; */
+            user-select: none;
+            scroll-behavior: smooth;
+            
+            }
+
+            .smallsizesearch{
+    margin: auto;
+    width: 234px;
+    height:50px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left:0px;
+    right:0px;
+    z-index: 2;
+}
+
+
+/* .smallsizesearch:hover iframe{
+height: 234px;
+} */
+
+
+.smallsizesearch iframe{
+    margin: auto;
+    display: block;
+    margin-top: 9px;
+    width:204px;
+    height: 300px;
+    /* background-color: black; */
+
+
+}
+
+#searcherror{
+    background-color: aliceblue;
+    box-shadow: 0px 0px 8px;
+position: absolute;
+display: none;
+height: 200px;
+width:55%;
+top:120px;
+left: 0px;
+right:0px;
+ z-index: 1; 
+ margin:auto;
+ text-align: center;
+ line-height: 34px;
+ justify-content: center;
+
+}
+
+
+/* list of character to be displayed */
+            .characterdisplay{
+    position:absolute;
+    height:1240px;
+    right:0px;
+    top:0px; 
+    /* background-color: black; */
+    width: fit-content; 
+}
+
+#characterlistAOcontainer{
+  position: sticky;
+  top:75px;
+      z-index:2;
+  cursor:pointer;
+  /* background-color: rgba(194, 214, 13, 0.815); */
+  background-image: url("../iconcharacter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border:none;
+  width: 85px;
+  height: 95px;
+  /* float: right; */
+}
+
+/* .characterlistO{
+
+} */
+
+
+.characterposition{
+  position: fixed;
+  /* background-color: #000000; */
+  top:0px;
+  right:0px;
+  height: 100%;
+  z-index: 85;
+  transform:translateX(104%);
+  display: none;
+
+}
+
+
+
+.landmem{
+  /* background-color: #5f5f5f; */
+
+  width:418px;
+  min-height: 80px;
+  height:100%;
+  z-index: 85;
+
+  /* transition: 0.01s; */
+  /* animation-duration: 2s; */
+}
+
+
+
+.characterlistA{
+  top:85px; 
+  position:fixed;
+  z-index: 1; 
+  right: 22px; 
+  font-family:serif; 
+  text-decoration: none; 
+  color:yellow;
+  width:40px; 
+  height: 35px;
+  text-align: center;  
+  border-radius: 50%; 
+  opacity:50%; 
+  background-color: red;
+}
+
+.characterlistA:hover{
+  transition-duration:0.21s;
+  cursor:pointer;
+  opacity: 100%;
+}
+
+
+.titlecharacterlist{
+  position: fixed;
+  background-color:white;
+  color:darkblue;
+  border:0px;
+  box-shadow:0px 0px 4px black;
+  height:50px;
+  width:100%;
+  z-index: 2;
+}
+
+/* .titlecharacterlist::-webkit-scrollbar-track{
+ height: 15px;
+} */
+
+
+.listofcharacterwrap{
+  box-shadow:0px 0px 4px black;
+  background-color: aliceblue;
+  height:100%;
+  overflow: auto;
+  width:418px;
+  position:relative;
+  display: block;
+  /* transform:translateX(104%);
+  display: none; */
+
+}
+
+.listofcharacterwrap::-webkit-scrollbar-track {
+  box-shadow: inset 0px 0px 2px rgb(0, 0, 0);
+}
+
+.listofcharacterwrap::-webkit-scrollbar{
+  box-shadow:initial 0px 0px 0px black;
+}
+
+.listofcharacterwrap::-webkit-scrollbar-track-piece{ 
+  margin-top: 50px;
+}
+
+
+.link{
+  display: flex;
+  box-shadow:0px 0px 4px black;
+  height:150px;
+      width:100%;
+
+}
+
+
+.link:hover{
+  background-color: #d1cece;
+}
+
+.ahreStuff{
+  text-decoration:none;
+  cursor: context-menu;
+  /* pointer-events: none; */
+}
+
+
+.imageId{
+  width:200px;
+  height: 150px;
+  display: block;
+}
+
+
+.characternames{
+  display:flex;
+  width:100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #5f5f5f; */
+  padding-left: 8px;
+  font-family: fonttest11;
+
+}
+
+.characternames p{
+  font-size: 18px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+  <div id="smallsizesearch" class="smallsizesearch">
+    <iframe id="iframesearch" frameborder="0" scrolling="no" src="0search\testsearch.html"></iframe>
+</div>
+
+
+<div id="searcherror">
+  <p><h2 id="negativedisplay"></h2>
+       <h2 style="color:red;" id="errormessage"></h2>
+       <h2 id="negativedisplayConfirmed"></h2></p>
+    </div>
+    
+  <div class="filteroverlay"></div>
+
+        <!-- list of character to be displayed -->
+        <div class="characterdisplay">
+          <!-- start -->
+          <!-- character triggrer -->
+          <button id="characterlistAOcontainer">
+          </button>
+
+
+          <!--
+          |
+          linked
+          |
+          -->
+          <!-- list of character -->
+          <div  class="characterposition">
+          <div  id="characterlist" class="landmem" >
+
+          
+          <div  class="listofcharacterwrap">
+          <button  class="titlecharacterlist"><h3>Citizens of the village(dead or alive)</h3></button>
+            <a id="characterlistAC"><h1 class="characterlistA" >X</h1></a>
+          <br><br>
+          
+              <a href="#ajisai.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Ajisai" class="imageId" src="idsImg\ajisai.webp">
+                   <div class="characternames"><p>Ajisai</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#baiu.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Baiu" class="imageId" src="idsImg\baiu.webp">
+                   <div class="characternames"><p>Baiu</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#kyusuke.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Kyusuke" class="imageId" src="idsImg\kyusuke.webp">
+                   <div class="characternames"><p>Kyusuke</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#daibutsu.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Daibutsu" class="imageId" src="idsImg\daibutsu.webp">
+                   <div class="characternames"><p>Daibutsu</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#fuyo.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Fuyo" class="imageId" src="idsImg\fuyo.webp">
+                   <div class="characternames"><p>Fuyo</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#hanzo.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Hanzo" class="imageId" src="idsImg\hanzo.webp">
+                   <div class="characternames"><p>Hanzo</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#heiji.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Heiji" class="imageId" src="idsImg\heiji.webp">
+                   <div class="characternames"><p>Heiji</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#hisame.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Hisame" class="imageId" src="idsImg\hisame.webp">
+                   <div class="characternames"><p>Hisame</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#kagari.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="kagari" class="imageId" src="idsImg\kagari.webp">
+                   <div class="characternames"><p>kagari</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#kandachi.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Kandachi" class="imageId" src="idsImg\kandachi.webp">
+                   <div class="characternames"><p>Kandachi</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#kirisame.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Kirisame" class="imageId" src="idsImg\kirisame.webp">
+                   <div class="characternames"><p>Kirisame</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#konan.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Konan" class="imageId" src="idsImg\konan.webp">
+                   <div class="characternames"><p>Konan</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#midare.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Midare" class="imageId" src="idsImg\midare.webp">
+                   <div class="characternames"><p>Midare</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#mubi.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Mubi" class="imageId" src="idsImg\mubi.webp">
+                   <div class="characternames"><p>Mubi</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#murasame.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Murasame" class="imageId" src="idsImg\murasame.webp">
+                   <div class="characternames"><p>Murasame</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#oboro.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Oboro" class="imageId" src="idsImg\oboro.webp">
+                   <div class="characternames"><p>Oboro</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#ryusui.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Ryusui" class="imageId" src="idsImg\ryusui.webp">
+                   <div class="characternames"><p>Ryusui</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#samidare.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Samidare" class="imageId" src="idsImg\samidare.webp">
+                   <div class="characternames"><p>Samidare</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#shigure.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Shigure" class="imageId" src="idsImg\shigure.webp">
+                   <div class="characternames"><p>Shigure</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#suirenrain.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Suiren" class="imageId" src="idsImg\suirenrain.webp">
+                   <div class="characternames"><p>Suiren</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#suiu.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Suiu" class="imageId" src="idsImg\suiu.webp">
+                   <div class="characternames"><p>Suiu</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#tezuna.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Tezuna" class="imageId" src="idsImg\tezuna.webp">
+                   <div class="characternames"><p>Tezuna</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#yahiko.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Yahiko" class="imageId" src="idsImg\yahiko.webp">
+                   <div class="characternames"><p>Yahiko</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#yudachi.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Yudachi" class="imageId" src="idsImg\yudachi.webp">
+                   <div class="characternames"><p>Yudachi</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#uzumaki nagato.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Uzumaki Nagato" class="imageId" src="idsImg\uzumaki nagato.webp">
+                   <div class="characternames"><p>Uzumaki nagato</p></div>
+                  </div>
+                 </a>
+                 <br>
+                 <a href="#uzumaki fuso.html"  class="ahreStuff">
+                  <div class="link">
+                   <img title="Uzumaki Fuso" class="imageId" src="idsImg\uzumaki fuso.webp">
+                   <div class="characternames"><p>Uzumaki Fuso</p></div>
+                  </div>
+                 </a>
+                    </div>
+            </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+</div>
+<!-- end -->
+
+        <script>
+let characterlist=document.getElementsByClassName("characterposition")[0];
+let overlay= document.getElementsByClassName("filteroverlay")[0];
+
+// characterposition
+// listofcharacterwrap
+
+document.getElementById("characterlistAC").onclick=displaychatacterListC;
+
+document.getElementById("characterlistAOcontainer").onclick=displaychatacterListO;
+
+let pos;
+
+
+
+
+function displaychatacterListO(){
+  overlay.style.display= "block";
+  characterlist.style.display= "block";
+  pos=104;
+  out();
+
+  function out(){
+
+if(pos==0){
+  window.cancelAnimationFrame(out);
+}else{
+  pos--;
+  characterlist.style.transform="translateX("+pos+"%)";
+  window.requestAnimationFrame(out);
+}
+
+}
+
+}
+
+
+
+
+
+          function displaychatacterListC(){
+            overlay.style.display= "none";
+
+            let posin=pos;
+
+            into();
+ function into(){
+if(posin==104){
+  cancelAnimationFrame(into);
+  characterlist.style.display= "none";
+}else{
+  posin+=4;
+  characterlist.style.transform="translateX("+posin+"%)";
+  requestAnimationFrame(into);
+}
+
+
+}
+
+
+  }
+        </script>
+
+        </body>
+      </html>

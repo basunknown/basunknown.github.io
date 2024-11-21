@@ -1,8 +1,10 @@
+
 window.oncontextmenu=disablerightclick;
 
 function disablerightclick(){
         return false;
 }
+
 
 window.addEventListener('load' , function(){
  let preloader= document.getElementsByClassName('fullpage')[0];
@@ -12,8 +14,11 @@ document.getElementsByTagName('body')[0].style.overflowY='scroll';
 
 
 
+
 });
 
+
+let iframecover= document.getElementsByClassName("iframeCover")[0];
 let overlay= document.getElementsByClassName("filteroverlay")[0];
 
 let buttono= document.getElementById('characterlistAOcontainer');
@@ -22,7 +27,7 @@ buttono.onclick= displaychatacterListO;
 let buttonc= document.getElementById('characterlistAC');
 buttonc.onclick= displaychatacterListC;
 
-  
+
 
 let hand = document.getElementsByClassName('handpointed')[0];
 
@@ -35,35 +40,62 @@ function handgone(){
   hand.style.display='none';
 }}
 
-
-
-let characterlist = document.getElementById('characterlist');
+let characterlist=document.getElementsByClassName("characterposition")[0];
+let pos;
 
 
 function displaychatacterListO(){
-
-    // buttono.style.display='none';
-    overlay.style.display='block';
-    document.getElementById('forCharacterRemoval5').style.display="block";
-  characterlist.classList.add('landmem');
+  overlay.style.display= "block";
+  iframecover.style.display="block";
   characterlist.style.display= "block";
+  pos=104;
+
+  out();
+
+
+  function out(){
+
+if(pos==0){
+  window.cancelAnimationFrame(out);
+}else{
+  pos-=8;
+  characterlist.style.transform="translateX("+pos+"%)";
+  window.requestAnimationFrame(out);
 }
+characterlist.style.display= "block";
+}
+
+}
+
 
 for(let i=0; i<6; i++){
   document.getElementById('forCharacterRemoval'+i).onclick=displaychatacterListC;
 }
 
+
 function displaychatacterListC(){
-    // buttono.style.display= "block";
-    overlay.style.display='';
-  // characterlist.classList.remove('landmem');
-  characterlist.classList.add('landmems');
-  document.getElementById('forCharacterRemoval5').style.display="none";
-  setTimeout(function() {
-    characterlist.style.display= "";
-    characterlist.classList.remove('landmems');
-  }, 500);
+  overlay.style.display= "none";
+  iframecover.style.display="none";
+  let posin=pos;
+
+  into();
+function into(){
+
+if(posin==104){
+cancelAnimationFrame(into);
+characterlist.style.display= "none";
+}else{
+posin+=8;
+characterlist.style.transform="translateX("+posin+"%)";
+requestAnimationFrame(into);
+  }
+
+ }
+
 }
+
+
+
 
 
 let clansbutton = document.getElementsByClassName('clansbutton');
@@ -114,3 +146,4 @@ for (let i = 0; i < slideimages.length; i++) {
   myTimeout = setTimeout(slideshow, 4000);
   }
 }
+

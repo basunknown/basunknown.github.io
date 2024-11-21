@@ -59,11 +59,14 @@ e++;
     
 }else{
     datalis[i].style.display="none";
+
+
 }
+
 }
-window.parent.document.getElementsByClassName('LobjectFrame')[0].style.height=allSearchHeight.offsetHeight+"px";
+
 window.parent.document.getElementById('iframesearch').style.height=allSearchHeight.offsetHeight+"px";
-error();
+top.document.getElementById('searcherror').style.display='none';
 
 }
 
@@ -274,10 +277,7 @@ top.document.getElementById('searcherror').style.display='none';
 
 
 function iframeParentHeight(){
-    window.parent.document.getElementById('iframesearch').style.height=32+"px";
-    window.parent.document.getElementsByClassName('LobjectFrame')[0].style.height=32+"px";
-    
- }
+    window.parent.document.getElementById('iframesearch').style.height=allSearchHeight.offsetHeight+"px";   }
 
 // function increase(){
 
@@ -321,14 +321,12 @@ for(let e=0; e<datalis.length; e++){
         top.document.getElementById('negativedisplay').innerHTML=first;
        top.document.getElementById('errormessage').innerHTML='"'+searchvalue+'"';
        top.document.getElementById('negativedisplayConfirmed').innerHTML=last;
-       iframeParentHeight();
-
+       window.parent.document.getElementById('iframesearch').style.height=allSearchHeight.offsetHeight+"px";
 
 
     }
 
 }
-// 
-iframeParentHeight();
+window.parent.document.getElementById('iframesearch').style.height=allSearchHeight.offsetHeight+"px";
 
 

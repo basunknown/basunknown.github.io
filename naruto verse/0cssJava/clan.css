@@ -1,15 +1,3 @@
-/* html{
-  animation:removescroll 2s ;
-  animation-delay: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes removescroll{
-  to{
-    overflow:auto;
-  } */
-
-
 a{
   color: rgb(196, 36, 36);
 }
@@ -175,17 +163,15 @@ pointer-events: none;
 .door1{
   animation: open1 2s linear;
   background-color: rgba(240, 247, 180, 0.671);
-  /* animation-fill-mode: forwards; */
   left:0px;
   animation-delay: 2s;
-  ;
   animation-fill-mode: forwards;
 }
 
 
 .door2{
   animation: open2 2s linear;
-  background-color: rgba(230, 240, 207, 0.438);  /* animation-fill-mode: forwards; */
+  background-color: rgba(230, 240, 207, 0.438);
   right: 0px;
   animation-delay: 2s;
   animation-fill-mode: forwards;
@@ -207,13 +193,11 @@ right:-100%;
   }
 }
 
-    .clanMenu{
-
+  .clanMenu{
  height:63px;
  text-align:center; 
  box-shadow:1px 1px 5px ;
  position: relative;
- /* border: solid gray 1px; */
  background-color:rgb(70, 69, 69);
 }
 
@@ -265,18 +249,23 @@ box-shadow:rgb(133, 24, 24) 1px 1px 8px;
 }   
 
 .firstpage{
-  height:100vh; min-height: 450px; width:100%; padding-bottom: 6%;
+  height:100vh; 
+  width:100%;
+  justify-self: center;
+  display:flex;
   background-size: cover; 
 }
 
 
 .containerscroll{
   position: relative;
-  top:8vh;
-  bottom:4vh;
+
       width:140px;
-      height:450px;
-      display:flex;  
+      max-height: 450px;
+      height:100%;
+      min-height: 300px;
+      display:flex;
+      /* background-color: red; */
       margin: auto;
       animation: cunscroll 2s ease-in-out;
       animation-fill-mode: forwards ;
@@ -292,7 +281,10 @@ box-shadow:rgb(133, 24, 24) 1px 1px 8px;
     } 
 
     .scrollstick{
-      min-width:65px; height:100%; background-color:rgb(129, 34, 34); box-shadow: 1px 1px 10px; z-index: 2;
+      width:65px;
+      height:100%;
+      /* min-height: 320px; */
+      background-color:rgb(129, 34, 34); box-shadow: 1px 1px 10px; z-index: 2;
       border-radius:100%/ 25px 25px 15px 15px
     }
 
@@ -302,15 +294,18 @@ box-shadow:rgb(133, 24, 24) 1px 1px 8px;
     }
 
     .scrollcontent{
+      position: relative;
       animation: conunscroll 2s ease-in-out;
       background-image: url('../clandisplay/0oldtexture.webp');
+      background-position-y:48px ;
       animation-fill-mode: forwards ;
       animation-delay:4s ;
       background-color: rgb(245, 245, 198);
       height:95%;
+      /* min-height: 220px; */
         font-size:22px; 
         width: 3px;
-        margin-top: 14px;
+        top: 14px;
         display: block;
           overflow-y: hidden;
           box-shadow: 1px 1px 8px rgb(88, 88, 62);
@@ -323,45 +318,73 @@ box-shadow:rgb(133, 24, 24) 1px 1px 8px;
       }
     }
 
+
+
     .scrollcontentspan{
-width:100%;
-display: block; 
-margin-top:42px;
-background-color:rgba(244, 245, 240, 0.945);
-color: rgb(83, 4, 4);
-height: 80%;
-box-shadow: 0px 0px 8px rgba(139, 0, 0, 0.705);
-overflow: none;
+      width:100%;
+      position: relative;
+      min-width: fit-content;
+      display: block; 
+      /* margin: auto; */
+
+      top:8%;
+      background-color:rgba(244, 245, 240, 0.945);
+      color: rgb(83, 4, 4);
+      height: 84%;
+      box-shadow: 0px 0px 8px rgba(139, 0, 0, 0.705);
+      overflow: none;
     }
 
-    .paperscreen{
-      pointer-events: none;
+
+        .paperscreen{
       background-image: url('../clandisplay/0oldtexture.webp');
       opacity:60%;
       background-position: center;
-      background-position-y:-188px ;
-      background-color:rgba(244, 245, 240, 0.295);
-      width:100%;
+      background-position-y:-155px ;
+      min-width:fit-content;
+      width: 100%;
       height: 100%;
-      display: block;
+      display: flex;
       position: relative;
-      z-index: 1;
-      /* background-color: red; */
-     }
+      justify-content: center;
+      align-items: center;
+      z-index: 1;}
 
 
     .scrollcontentp{
+      text-indent: 50px;
+      position: relative;
+      display: block;
+      column-width:150px;
+      column-rule: solid 2px rgba(255, 0, 0, 0.103);
+      column-gap: 30px;
+      text-align: left;
+      /* margin-left: 7px; */
       top:-92%;
-      position: relative; 
-      margin:auto;
-      width:705px;
       margin: auto;
+      padding-left:10px;
+      padding-right:10px;
+      width: 750px;
+      height: 85%;
+      color: rgba(104, 28, 18, 0.918);
       font-family:fonttest6;
+      font-size: 23px;
+      z-index: 0;
+    }
 
+    .scrollcontentp a, .scrollcontentp a:visited{
+      color: rgb(138, 7, 7);
+    }
+
+    .scrollcontentp a:active{
+      color: red;
     }
 
     .scrollimg{
-      width:45px;
+      position:absolute; 
+      top:-8px;
+      left: 5px;
+      width: 30px;
         opacity: 0;
         animation:displayimg 3s ease-in-out;
         animation-delay: 5s;
@@ -386,7 +409,6 @@ overflow: none;
     }
 
     .charactercontainer{
-      
       display: block;
       margin: auto;
       /* background-color:#00ffff; */
@@ -436,9 +458,6 @@ overflow: none;
 
       .clanImg{
         width:240px;
-        /* box-shadow: 1px 1px 9px
-        black; */
-
       }
 
 
@@ -448,6 +467,7 @@ overflow: none;
           position: relative;
           color: rgb(125, 226, 125);
           box-shadow: 2px 2px 10px black;
+          display: flex;
           margin:auto;
           max-width:980px;
           z-index: 1;
@@ -459,7 +479,6 @@ overflow: none;
         .tableheadcontainer h2{
           margin: auto;
           position: relative;
-          top:14px;
           text-align: center;
           font-family: fonttest9;
         }
@@ -502,9 +521,7 @@ overflow: none;
     
       min-width:400px;
       max-width:600px;
-      height: fit-content; 
-      /* zoom:120%; */
-      /* text-align: center;*/
+      height: fit-content;
     } 
 
     .container h2{
@@ -550,8 +567,6 @@ overflow: none;
     height: fit-content;
     display: block;
     margin: auto;
-    /* min-width: 225px; */
-    
   }
   
   
@@ -602,36 +617,14 @@ overflow: none;
   text-align: center;
   width:100%;
   }
-
-  @media screen and (max-width:900px) {
-    .scrollcontentp{
-      width: fit-content;}
-  }
-
      
-    @media screen and (max-width:650px) {
-      
-      .scrollcontentp{
-        min-width: 150px;
-        top:-95%;
-        font-size: 20px;
-      }
 
-      .scrollcontent{
-          height:96%;
-        }
-
-    .containerscroll{
-        height: 500px;
-      }
-    }
 
       @media screen and (max-width:580px) {
 
         .classimgname{
          display: none;   
         }
-
 
         .classimgnamed{
          margin-top:165px;
@@ -642,25 +635,6 @@ overflow: none;
          display: block;
 
         }
- 
-         .scrollcontent{
-          height:95%;
-        }
-
-    .containerscroll{
-        height: 440px;
-      }
-
-      .scrollcontentspan{
-        margin-top: 22px;
-        height: 90%;
-      }
-
-      .scrollcontentp{
-        width: 98%;
-        font-size:15px;
-         
-      }
 
         .container{
           min-width:100px;
@@ -673,18 +647,16 @@ overflow: none;
         .tableheadcontainer{
          min-width:200px;
          width:100%;
+         height: 80px;
          text-align: center;
         }
 
         .clanImg{
-      width:280px;}
+         width:280px;}
 
-
-
-
-      td{
+        td{
         display: block;
-      }
+       }
 
       .clanGif{
           width:90%;
@@ -692,16 +664,19 @@ overflow: none;
           display: block;
       }
 
-
-   
-
       #clanGif{
         margin-top: 4px;
       }
-
 
       .jutsup{
       width: 88%;
        max-width:324px; 
       }
+    }
+
+    @media screen and (max-height:400px) {
+      .firstpage{
+        height:155vh;
+      }
+
     }

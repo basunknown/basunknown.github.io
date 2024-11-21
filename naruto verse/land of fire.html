@@ -13,7 +13,7 @@
     
 
     <style>
-.wallpaper{
+ body{
       background-image: url('Land of Fire.webp');
 
     }
@@ -65,7 +65,7 @@
 
     .secondpage{
         background-image:url('landoffirehiddenleaf.webp');
-        /* background-color: red; */
+        
     }
 
 
@@ -101,7 +101,7 @@
     
     .slideimagename span a{
         color: red;
-    }
+    } 
 
 
 
@@ -185,23 +185,19 @@
 
 
       <div class="filteroverlay"></div>
-      <div class="wallpaper"></div>
+      
 
       <div id="forCharacterRemoval0" class="landmenu">
             <div draggable="false" class="nameOfLand">
                 <img  class="nameOfLandimg" draggable="false"   src="00symbol\Nland of fire.png">
                 <span class="landnamespan">
-                    <a id="landname">LAND OF FIRE
-
-                    </a>
+                    <a id="landname">LAND OF FIRE</a>
                 </span>
             </div>
         
-            <iframe  class="LobjectFrame" frameborder="0" scrolling="no" src="0search\search.html">
-            </iframe>
+            <iframe  class="LobjectFrame" frameborder="0" scrolling="no" src="0search\search.html"></iframe>
 
-            <a href="shinobi world map.html"><img draggable="false"  class="map" src="00symbol\map.jpg">
-            </a>
+            <a href="shinobi world map.html"><img draggable="false"  class="map" src="00symbol\map.jpg"></a>
     
         </div>
 
@@ -209,7 +205,7 @@
         <div id="forCharacterRemoval5" class="iframeCover"></div>
 
         <div class="smallsizesearch" >
-            <iframe frameborder="0" scrolling="no" src="0search\search.html"></iframe>
+            <iframe id="iframesearch" frameborder="0" scrolling="no" src="0search\search.html"></iframe>
         </div>
 
 
@@ -1772,24 +1768,18 @@
         <!-- end -->
 
 
-                <!-- <div id="searcherror">
-             <p><h2 id="negativedisplay"></h2>
-                  <h2 style="color:red;" id="errormessage"></h2>
-                  <h2 id="negativedisplayConfirmed"></h2></p>
-               </div> -->
-
-               
-               <div id="searcherror">
-                <p><h2 id="negativedisplay"></h2>
-                  <h2 style="color:red;" id="errormessage"></h2>
-                  <h2 id="negativedisplayConfirmed"></h2></p>
-                </div>
+        <div id="searcherror">
+          <p><h2 id="negativedisplay"></h2>
+               <h2 style="color:red;" id="errormessage"></h2>
+               <h2 id="negativedisplayConfirmed"></h2></p>
+            </div>
+            
 
         <!-- land info -->
         <div id="forCharacterRemoval1"  class="firstpage">
-            <div class="introinfo">
-                <p class="introinfoP">
-                    The Land of Fire is one of the most powerfull countries in the naruto verse. The head of the country is  the feudal lord and it hidden village is the hidden leaves <span class="introinfospan">( hidden leaf village), home of the nation's shinobi. It has powerfull shinobis which are not necesserily part of the hidden leaf.</span>
+            <div id="introinfo" class="introinfo">
+                <p id="introinfoP" class="introinfoP">
+                    The Land of Fire is one of the most powerfull countries in the naruto verse. The head of the country is  the feudal lord and it hidden village is the hidden leaves ( hidden leaf village), home of the nation's shinobi. It has powerfull shinobis which are not necesserily part of the hidden leaf.
                 </p>
             </div>
         </div>
