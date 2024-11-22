@@ -128,6 +128,7 @@
 
         html,body {
             margin: 0px;
+            width: 100%;
             height: 100%;
             overflow: hidden;
             position: relative;
@@ -440,7 +441,7 @@ right:0px;
   display: flex;
   box-shadow:0px 0px 4px black;
   height:150px;
-      width:100%;
+width:100%;
 
 }
 
@@ -911,21 +912,21 @@ width:100%;
 
             @media screen and (max-width: 502px) {
 
-                /* .firstpage{
-                    padding-top:0px ;
-                    padding-bottom:0px ;
-                } */
                 .footer{
                     font-size: 14px;
                     height:fit-content;
                 }
-             
+
 
                 hr{
                     width: 48%;
                 }
                 .listofcharacterwrap::-webkit-scrollbar{
                    width: 10px;
+                }
+
+                .characterposition{
+                    width: 100%;
                 }
 
                 .landmem{
@@ -942,11 +943,7 @@ width:100%;
                 .link{
                     width: 100%;
                 }
-/* 
-                .characternames{
-                    padding-left:5%;
-                    
-                } */
+
 
                 .landDIV{
                     position:absolute;
@@ -973,13 +970,7 @@ width:100%;
                 .landnamespan{
                     display: none;
                 }
-
-                /* .introinfo{
-                    width:100%; */
                 }
-                /* .introinfoP{
-                    font-size:110%;
-                } */
 
                
 
@@ -1030,10 +1021,6 @@ width:100%;
                         font-size:50%;
                     }
 
-
-                    
-
-                
 
                     .footercopyright{
                         font-size:50%;
