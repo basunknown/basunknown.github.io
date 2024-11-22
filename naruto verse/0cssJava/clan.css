@@ -206,6 +206,12 @@
   right:-100%;
     }
   }
+
+  .firstview{
+    height: 105vh;
+    width: 100%;
+    min-height:610px;
+  }
   
       .clanMenu{
   
@@ -265,13 +271,13 @@
   }   
   
   .firstpage{
-    height:100vh; 
+    height:100%; 
     width:100%;
-    min-height:480px;
-
+    min-height:450px;
     justify-self: center;
     display:flex;
     background-size: cover; 
+    background-color: azure;
   }
   
  
@@ -280,6 +286,7 @@
       width:140px;
       max-height: 450px;
       height:100%;
+      top:-5%;
       min-height: 300px;
       display:flex;
       /* background-color: red; */
