@@ -115,4 +115,11 @@ font-family: fonttest15;
             font-family: fonttest23;
             src: url('../font/Brush Sharp.otf');
         }
+
+       @font-face{
+            font-family: fonttest24;
+            src: url('../font/comic.tff');
+        }
+
+
         
