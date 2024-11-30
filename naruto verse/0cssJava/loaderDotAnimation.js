@@ -9,4 +9,4 @@ let dot = document.getElementById('dot');
   dot.innerHTML="";
   }
   
-  }, 380);
+  }, 370);
