@@ -2,8 +2,11 @@
 window.oncontextmenu=disablerightclick;
 
 function disablerightclick(){
-        return false;
+      return false;
 }
+
+
+
 
 
 window.addEventListener('load' , function(){
@@ -12,9 +15,11 @@ window.addEventListener('load' , function(){
 //  preloader.style.display='none';
 document.getElementsByTagName('body')[0].style.overflowY='scroll';
 
-
-
-
+let  userAgent=navigator.userAgent;
+if(userAgent.indexOf("Firefox") > -1){
+document.getElementsByClassName('introinfoP')[0].style.scrollbarWidth="thin";
+document.getElementsByClassName('hiddenvillagep')[0].style.scrollbarWidth="thin";
+ }
 });
 
 

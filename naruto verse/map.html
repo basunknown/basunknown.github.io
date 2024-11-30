@@ -4,28 +4,25 @@
 shinobi world map
 </title>
 
-
-
-<!-- <script src="0cssJava\mapsearch.js" defer></script> -->
+<script src="0cssJava\firefoxDetectMap.js" defer></script>
 <script src="0cssJava\allsearchesM.js" defer></script>
 
 <link rel="stylesheet" type="text/css" href="0cssJava\allsearchesM.css">
-<link rel="stylesheet" type="text/css" href="0cssJava\fonts.css">
+        <link rel="stylesheet" type="text/css" href="0cssJava\loaderanimation.css">
+        <link rel="stylesheet" type="text/css" href="0cssJava\fonts.css">
+        <link rel="stylesheet" type="text/css" href="0cssJava\footer.css">
 
 <!--         <meta name="viewport" content="
         width=device-width, initial-scale=1.0"> -->
 
 
 <style>
-/* html{
-
-} */
-
 ::-webkit-scrollbar{
     background-color: rgba(97, 192, 176, 0.5);
     border-radius: 18px;
     width: 5px;
     height: 5px;
+    scrollbar-width: thin;
   }
 
   ::-webkit-scrollbar-track {
@@ -44,17 +41,16 @@ shinobi world map
     background: #5f5f5f; 
   }
   
-body{
-margin:auto;
-display: block;
-scroll-behavior: smooth;
-user-select: none;
+  html,body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+margin: 0px;
+  background-color: rgb(83, 82, 82);
+  /* scrollbar-width:thin; */
+  scroll-behavior:smooth;
+  }
 
-}
-
-/* body::-webkit-scrollbar {
-display: none;
-} */
 
 polygon{
 stroke:black;

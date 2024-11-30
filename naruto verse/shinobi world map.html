@@ -7,7 +7,10 @@
         <script src="0cssJava\allsearchesM.js" defer></script>
         <link rel="icon" href="00symbol\map.png">
         <link rel="stylesheet" type="text/css" href="0cssJava\allsearchesM.css">
+                <link rel="stylesheet" type="text/css" href="0cssJava\loaderanimation.css">
         <link rel="stylesheet" type="text/css" href="0cssJava\fonts.css">
+        <link rel="stylesheet" type="text/css" href="0cssJava\footer.css">
+        
 
         
         <meta name="viewport" content="width-width, initial-scale=01">
@@ -17,101 +20,6 @@
 
 
 <style>
-
-.fullpage{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height:100vh;
-    position:fixed;
-    z-index: 100;
-    background-color: black;
-  }
-
-
-  .loader{
-    top:-20px;
-    margin: auto;
-    display: block;
-    color: aliceblue;
-    position: relative;
-    /* background-color: red; */
-    width:150px;
-    height: 150px;
-    
-    text-align: center;
-  }
-
-  .loaderfirst{
-    width:120px;
-    height:120px;
-    border:9px solid white;
-    border-top:9px solid rgba(255, 255, 255, 0);
-    /* background-color: blue; */
-    border-radius: 50%;
-    content: '\200b';
-    animation: firstloader 1s linear infinite;
-  }
-
-  .loadersecond{
-    top: -123px;
-    left: -6px;
-    position:relative;
-    width:90px;
-    height:90px;
-    margin: auto;
-   border:9px solid white;
-   border-left:9px solid rgba(255, 255, 255, 0);
-   /* background-color: green; */
-    border-radius: 50%;
-    animation: secondloader 1s linear infinite;
-    
-  }
-
-  @keyframes firstloader{
-    to{
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes secondloader{
-    to{
-      transform: rotate(-360deg);
-    }
-  }
-
-
-
-     .text {
-font-size: 30px;
-font-weight: bold;
-width: fit-content;
-font-family:monospace;
-clip-path: inset(0 45px 0 0);
-animation: l4 1.2s steps(4) infinite;
-}
-
-@keyframes l4 {to{clip-path: inset(0 -8px 0 0)}}
-
-
-.iframeloader1{
-    position:fixed;
-    width:100%;
-    height:100%;
-    z-index: 100;
-    animation:fadeaway 0.3s linear;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeaway{
-    to{
-      opacity: 0;
-        visibility: hidden;
-    }
- 
-}
-
-
 
 ::-webkit-scrollbar{
     background-color: rgba(192, 159, 97, 0.5);
@@ -143,7 +51,8 @@ animation: l4 1.2s steps(4) infinite;
   height: 100%;
   width: 100%;
 margin: 0px;
-  /* background-color: black; */
+  background-color: black;
+  
   scroll-behavior:smooth;
   background-color:rgb(32, 32, 32);
   }
@@ -210,6 +119,9 @@ right:0px;
     width:1600px;
     height:905px;
     background-color: black;
+    scrollbar-width: thin;
+  scrollbar-color: red;
+  scroll-margin-top:485px;
     
 
 
@@ -229,75 +141,6 @@ right:0px;
     } */
 
 
-    .footer{
-            font-family: sans-serif;
-            font-size: 13px;
-            display: flex;
-            width:1600px;
-            color: antiquewhite;
-            height:150px;
-            background-color:rgb(32, 32, 32);
-            align-items: center;
-            padding-top: 40px;
-            padding-bottom: 10px;
-        }
-
-        .footercontent{
-          height: fit-content;
-          display: block;
-          margin: auto;
-          /* min-width: 225px; */
-          
-        }
-
-
-        .pcontainer{
-            display:block; margin:auto;  width:80%;
-            /* background-color: red; */
-        }
-
-
-          .pcontainer p{
-            display:block; 
-            margin:auto;
-            width: 90%;
-            text-align: left;
-           }
-
-                    .icon{
-                      display:block;
-                      margin:auto;
-                        width:fit-content;
-                        margin-top:10px ;
-                    }
-
-                    .icon img{
-                        width:30px;
-                    }
-
-        .footercopyright{
-          display:block;
-          margin:auto;
-          width: 100%;
-            /* background-color: #5f5f5f; */
-        } 
-
-       hr{
-        text-align: left;
-        margin: auto;
-        display: block;
-        margin-top:18px;
-        width:70%;
-        border: solid gray 0.1px;
-       }
-
-       .footercopyright p{
-        display:block;
-            margin:auto;
-            margin-top:8px;
-        text-align: center;
-        width:100%;
-       }
 
        
 .slideshow{
@@ -354,12 +197,13 @@ scrollbar-width: 45px;     } */
        .iframehere{
         width:100%;
         height: 900px;
+        
        }
      
 
 
-       .mapmenu,.slideshow,.footer{
-    font-size: 14px;  min-width:225px;
+       .mapmenu,.slideshow{
+       font-size: 14px;  min-width:225px;
        width:100%;}
       
       }
@@ -369,14 +213,8 @@ scrollbar-width: 45px;     } */
        @media screen and (max-width:700px) {
        .iframehere{
         height: 700px;
-       }
-      
-       } 
-/* 
-       @media screen and (max-width:580px) {
-       hr{
-                    width: 45%;
-                }} */
+       }   
+      }
 
 
 
@@ -395,7 +233,7 @@ scrollbar-width: 45px;     } */
 
     <div class="loadersecond">
       </div>
-      <h3 class="text">loading<span id="dot">...</span></h3>
+      <h3 class="text">loading<span id="dot"></span></h3>
       </div>
 
 
@@ -489,6 +327,9 @@ scrollbar-width: 45px;     } */
            </div>
            </div>
            <script>
+
+
+
 
 window.addEventListener('load' , function(){
  let preloader= document.getElementsByClassName('fullpage')[0];

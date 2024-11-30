@@ -1,109 +1,5 @@
-/* html{
-  animation:removescroll 2s ;
-  animation-delay: 2.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes removescroll{
-  to{
-    overflow:auto;
-  } */
-
-
   a{
     color: rgb(196, 36, 36);
-  }
-  
-    .fullpage{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height:100%;
-      position:fixed;
-      z-index: 150;
-      background-color: black;
-    }
-  
-  
-    .loader{
-      margin: auto;
-      display: block;
-      color: aliceblue;
-      position: relative;
-      /* background-color: red; */
-      width:150px;
-      height: 150px;
-      
-      text-align: center;
-    }
-  
-    .loaderfirst{
-      width:120px;
-      height:120px;
-      border:9px solid white;
-      border-top:9px solid rgba(255, 255, 255, 0);
-      /* background-color: blue; */
-      border-radius: 50%;
-      content: '\200b';
-      animation: firstloader 1s linear infinite;
-    }
-  
-    .loadersecond{
-      top: -123px;
-      left: -6px;
-      position:relative;
-      width:90px;
-      height:90px;
-      margin: auto;
-     border:9px solid white;
-     border-left:9px solid rgba(255, 255, 255, 0);
-     /* background-color: green; */
-      border-radius: 50%;
-      animation: secondloader 1s linear infinite;
-      
-    }
-  
-    @keyframes firstloader{
-      to{
-        transform: rotate(360deg);
-      }
-    }
-  
-    @keyframes secondloader{
-      to{
-        transform: rotate(-360deg);
-      }
-    }
-  
-  
-  
-       .text {
-  font-size: 30px;
-  font-weight: bold;
-  width: fit-content;
-  font-family:fonttest22, monospace;
-  clip-path: inset(0 45px 0 0);
-  animation: l4 1.2s steps(4) infinite;
-  }
-  
-  @keyframes l4 {to{clip-path: inset(0 -8px 0 0)}}
-  
-  .iframeloader1{
-    position:fixed;
-    width:100%;
-    height:100%;
-    z-index: 100;
-    animation:fadeaway 0.1s linear;
-    animation-fill-mode: forwards;
-  }
-  
-  
-  @keyframes fadeaway{
-    to{
-      opacity: 0;
-        visibility: hidden;
-    }
-  
   }
   
   
@@ -300,7 +196,7 @@
     
     @keyframes cunscroll{
       to{
-        width:95%;
+        width:98%;
       }
     } 
 
@@ -320,8 +216,11 @@
     .scrollcontent{
       position: relative;
       animation: conunscroll 2s ease-in-out;
-      background-image: url('../clandisplay/0oldtexture.webp');
-      background-position-y:48px ;
+      background-image: url('../clandisplay/10oldtexture.webp');
+      /* background-blend-mode:overlay; */
+      background-position: center;
+      background-position-y:-255px ;
+      /* background-position-x:; */
       animation-fill-mode: forwards ;
       animation-delay:4s ;
       background-color: rgb(245, 245, 198);
@@ -331,6 +230,7 @@
         width: 3px;
         top: 14px;
         display: block;
+        overflow: auto;
           overflow-y: hidden;
           box-shadow: 1px 1px 8px rgb(88, 88, 62);
           
@@ -338,60 +238,73 @@
 
     @keyframes conunscroll{
       to{
-        width:95%;
+        width:98%;
       }
     }
 
 
 
     .scrollcontentspan{
+      background-image: url('../clandisplay/0110oldtexture.webp');
+      background-position: center;
+      background-position-y:-155px ;
+      background-blend-mode:darken;
+      /* mix-blend-mode: lighten; */
       width:100%;
       position: relative;
-      min-width: fit-content;
-      display: block; 
-      /* margin: auto; */
+      min-width: max-content;
+      display: flex; 
+      margin: auto;
       top:32px;
       text-align: center;
-      background-color:rgba(244, 245, 240, 0.945);
+      background-color:rgb(244, 245, 240);
       color: rgb(83, 4, 4);
       height: 84%;
       box-shadow: 0px 0px 8px rgba(139, 0, 0, 0.705);
-      overflow: none;
+      overflow-x: none;
+      /* overflow-y: hidden; */
       
     }
 
 
-        .paperscreen{
-          pointer-events: none;
+      .paperscreen{
+      pointer-events: none;
       background-image: url('../clandisplay/0oldtexture.webp');
       opacity:60%;
       background-position: center;
       background-position-y:-155px ;
       min-width:fit-content;
       width: 100%;
+      display:none;
       height: 100%;
       position: relative;
       z-index: 1;}
 
 
     .scrollcontentp{
+     
+      /* background-color: #5f5f5fe5; */
+      opacity: 80%;
       text-indent: 25px;
       position: relative;
-      display: block;
-      column-width:180px;
+      column-width:227px;
       column-rule: solid 1px rgba(255, 0, 0, 0.103);
-      column-gap: 40px;
+      column-gap: 30px;
       text-align: left;
-      top:-332px;
-      margin: auto;
+      margin:auto;
+      column-fill:auto;
+      padding: 12px;
+      /* column-count:1; */
+      /* width: 250px; */
+      /* column-count:4; */
+      max-width: fit-content;
+      height: 300px;
       padding-left: 12px;
-      flex-direction: column;
-      column-fill: auto;
-       width: 750px;
-      max-height: 330px;
-      color: rgba(104, 28, 18, 0.918);
-      font-family:fonttest6;
-      font-size: 23px;
+      color: rgba(77, 16, 8, 0.925);
+      /* font-family:fonttest6; 
+       font-size: 23px; */
+      font-family:Comic Sans MS;
+      font-size: 21px;
       z-index: 0;
     }
 
@@ -496,8 +409,6 @@
           z-index: 1;
           height:55px;
           width:100%;
-
-
           background-color:rgb(153, 1, 1);
           position: relative;
           color: rgb(125, 226, 125);
@@ -585,55 +496,6 @@
     }
   
 
-    .footer{
-      font-family: sans-serif;
-      display: flex;
-      width:100%;
-      font-size:12px;
-      color: antiquewhite;
-      height:150px;
-      background-color:rgb(32, 32, 32);
-      align-items: center;
-      padding-top: 42px;
-  }
-
-  .footercontent{
-    height: fit-content;
-    display: block;
-    margin: auto;
-  }
-  
-  
-  .pcontainer{
-      display:block; margin:auto;  width:80%;
-      /* background-color: red; */
-  }
-  
-  
-    .pcontainer p{
-      display:block; 
-      margin:auto;
-      width: 90%;
-      text-align: left;
-     }
-  
-              .icon{
-                display:block;
-                margin:auto;
-                  width:fit-content;
-                  margin-top:10px ;
-              }
-  
-              .icon img{
-                  width:30px;
-              }
-  
-  .footercopyright{
-    display:block;
-    margin:auto;
-    width: 100%;
-      /* background-color: #5f5f5f; */
-  } 
   
   hr{
   text-align: left;

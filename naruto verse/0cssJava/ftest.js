@@ -4,6 +4,8 @@ function disablerightclick(){
         return false;
 }
 
+
+
 window.addEventListener('load' , function(){
   let preloader= document.getElementsByClassName('fullpage')[0];
   preloader.classList.add('iframeloader1');
@@ -12,6 +14,11 @@ window.addEventListener('load' , function(){
 
  document.getElementsByTagName('body')[0].style.overflowY='scroll';
 
+ let  userAgent=navigator.userAgent;
+ if(userAgent.indexOf("Firefox") > -1){
+ document.getElementsByClassName('introinfoP')[0].style.scrollbarWidth="thin";
+ document.getElementsByClassName('hiddenvillagep')[0].style.scrollbarWidth="thin";
+}
 
  });
 
