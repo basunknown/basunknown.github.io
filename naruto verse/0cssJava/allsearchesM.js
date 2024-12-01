@@ -1,24 +1,30 @@
+
 window.oncontextmenu=disablerightclick;
 
 function disablerightclick(){
         return false;
 }
 
+let allSearchHeight=document.getElementById('allSearchHeight');
+
 let box=document.getElementById('searchbox');
 let databoxlist=document.getElementById("divdatalist");
 box.onkeydown=selecting;
-box.onblur=error;
 box.oninput=keysof;
 box.onfocus=keysof;
 
 
 
+// top.window.alert(allSearchHeight.offsetHeight);
+
 let datalis=document.getElementsByClassName('optionlist')
+
+
 
 
 //anything that matches search appears in here
 function keysof(){
-    error()
+
     let e=0;
     databoxlist.style.display="block";
     
@@ -26,8 +32,6 @@ function keysof(){
 
         datalis[o].style.display="none";
         }
-
-    
 
 for(let i=0; i<datalis.length; i++){
     
@@ -39,10 +43,14 @@ if(box.value.trimStart()==""||box.value.trimStart()==" "){
 }
 else if(showsits.toLowerCase().includes(box.value.toLowerCase().trimStart())){
     
-    e++;
+    
    
 
     datalis[i].style.display="block";
+
+
+e++;
+
     if(e>=6){
         break;   
     }
@@ -50,14 +58,21 @@ else if(showsits.toLowerCase().includes(box.value.toLowerCase().trimStart())){
 
     
 }else{
-
     datalis[i].style.display="none";
+}
+}
+window.parent.document.getElementById('iframesearch').style.height=allSearchHeight.offsetHeight+"px";
+error();
 
 }
 
+box.onblur=delaying;
+
+function delaying(){ 
+    setTimeout(iframeParentHeight, 250);
 }
 
-}
+
 
 
 function selecting(){
@@ -253,25 +268,38 @@ function abluruse(){
 
 
 function error(){
-    top.document.getElementById('searcherror').style.display='none';}
+top.document.getElementById('searcherror').style.display='none';
+}
 
+
+function iframeParentHeight(){
+    window.parent.document.getElementById('iframesearch').style.height=32+"px";    
+ }
+
+// function increase(){
+
+//   }
 
 //creat links
 function locatedata(){
     
-    // let ignorespace=start;
+    
      let searchvalue=box.value.trim().toLowerCase();
             let index=".html"
 
-    let cap=searchvalue.toUpperCase();
+   
  
 
-
+let inlocations;
     let result;
+    let fileName;
 for(let e=0; e<datalis.length; e++){
     
     result=datalis[e].getAttribute('value');
-    if(searchvalue==result){
+    fileName=datalis[e].getAttribute('name');
+    let dash="/";
+    inlocations=".."+dash+fileName+dash;
+    if(searchvalue==result){ 
         break;
         }
     }
@@ -279,22 +307,31 @@ for(let e=0; e<datalis.length; e++){
  
 
     if(searchvalue==result){
-        top.window.location = searchvalue+index;
+    //   alert(top.window.location = inlocations+searchvalue+index);  
+        top.window.location = inlocations+searchvalue+index;
+        
         }else if(searchvalue==""){
-            error();      }
-            else {
-     
-             let first='your search: '; 
-             let last='was not found';
-             top.document.getElementById('searcherror').style.display='flex';
-             top.document.getElementById('negativedisplay').innerHTML=first + 
-             '<br>"'+ searchvalue +'"<br>'+last;
+
+           error();  
+        
+        }
+       else {
+
+        let first='your search:'; 
+        let last='was not found';
+        top.document.getElementById('searcherror').style.display='block';
+
+        top.document.getElementById('negativedisplay').innerHTML=first;
+       top.document.getElementById('errormessage').innerHTML='"'+searchvalue+'"';
+       top.document.getElementById('negativedisplayConfirmed').innerHTML=last;
+       iframeParentHeight();
+
+
+
     }
 
 }
-
-
-
-
+// 
+iframeParentHeight();
 
 

@@ -286,19 +286,23 @@ function iframeParentHeight(){
 //creat links
 function locatedata(){
     
-    let inlocations="..\\"
+    
      let searchvalue=box.value.trim().toLowerCase();
             let index=".html"
 
    
  
 
-
+let inlocations;
     let result;
+    let fileName;
 for(let e=0; e<datalis.length; e++){
     
     result=datalis[e].getAttribute('value');
-    if(searchvalue==result){
+    fileName=datalis[e].getAttribute('name');
+    let dash="/";
+    inlocations=".."+dash+fileName+dash;
+    if(searchvalue==result){ 
         break;
         }
     }
@@ -306,7 +310,9 @@ for(let e=0; e<datalis.length; e++){
  
 
     if(searchvalue==result){
+    //   alert(top.window.location = inlocations+searchvalue+index);  
         top.window.location = inlocations+searchvalue+index;
+        
         }else if(searchvalue==""){
 
            error();  

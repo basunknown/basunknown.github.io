@@ -4,10 +4,9 @@
             shinobi world map
         </title>
         
-        <script src="0cssJava\allsearchesM.js" defer></script>
+        
         <link rel="icon" href="00symbol\map.png">
-        <link rel="stylesheet" type="text/css" href="0cssJava\allsearchesM.css">
-                <link rel="stylesheet" type="text/css" href="0cssJava\loaderanimation.css">
+        <link rel="stylesheet" type="text/css" href="0cssJava\loaderanimation.css">
         <link rel="stylesheet" type="text/css" href="0cssJava\fonts.css">
         <link rel="stylesheet" type="text/css" href="0cssJava\footer.css">
         
@@ -71,16 +70,19 @@ margin: 0px;
       width:100%; width:1600px;  position:absolute; background-color:white; text-align:center; height:27px; z-index: 1; box-shadow:1px 1px 12px;
     }
 
-    .searchcontainer{
-      margin:auto;
-      position: fixed;
-      left:5%;
-      top:104px;
-      display: block;
-      width: 205px; 
-      height:35px;
-      z-index: 1;
-    }
+    .searchiframe{
+    width: 204px;
+    height:50px;
+    border-radius: 10px 10px 10px 10px;
+    position: fixed;
+   z-index: 1545;
+    left:5%;
+  top:104px;
+   display: block;
+  margin-top: 9px;
+  width:204px;
+  z-index: 45;
+  height: 300px;}
 
     .searchbox{
       position: absolute; opacity:40%; margin:auto; display: block;
@@ -95,7 +97,7 @@ margin: 0px;
     #searcherror{
     background-color: aliceblue;
     box-shadow: 0px 0px 8px;
-position:fixed;
+     position:fixed;
 display: none;
 justify-content: center;
 align-items: center;
@@ -242,52 +244,14 @@ scrollbar-width: 45px;     } */
             <div class="mapmenu">
                 <P class="mapmenup"> Map of The 5 Great Nations and various Hidden Villages</p>
 
-                  <!-- <div style="width: 100%;">
-                    <iframe  allow="autoplay"  name="thisiframe" class="LobjectFrame" frameborder="0" scrolling="no" src="0search\search.html"></iframe>
-                    </div> -->
+
 
                     <div class="line"></div>
                     </div>
 
 
-                    <div class="searchcontainer">
-                      <input type="search" class="searchbox" placeholder="   Search clan and land..."  autocomplete="off" id="searchbox">
-                      <div id="divdatalist">
-                          <li class="optionlist"  value="inuzuka">Inuzuka</li>
-                          <li class="optionlist"  value="kurama">Kurama</li>
-                          <li class="optionlist"  value="hatake">Hatake</li>
-                          <li class="optionlist"  value="yamanaka">Yamanaka</li>
-                          <li class="optionlist"  value="haruno">Haruno</li>
-                          <li class="optionlist"  value="akimichi">Akimichi</li>
-                          <li class="optionlist"  value="aburame">Aburame</li>
-                          <li class="optionlist"  value="nara">Nara</li>
-                          <li class="optionlist"  value="sarutobi">Sarutobi</li>
-                          <li class="optionlist"  value="uzumaki">Uzumaki</li>
-                          <li class="optionlist"  value="hyuga">Hyuga</li>
-                          <li class="optionlist"  value="senju">Senju</li>
-                          <li class="optionlist"  value="uchiha">Uchiha</li>
-                          <li class="optionlist"  value="kohaku">Kohaku</li>
-                          <li class="optionlist"  value="shimura">Shimura</li>
-                          <li class="optionlist"  value="kamizuru">Kamizuru</li>
-                          <li class="optionlist"  value="chinoike">Chinoike</li>
-                          <li class="optionlist"  value="yotsuki">Yotsuki</li>
-                          <li class="optionlist"  value="hozuki">Hozuki</li>
-                          <li class="optionlist"  value="hoshigaki">Hoshigaki</li>
-                          <li class="optionlist"  value="yuki">Yuki</li>
-                          <li class="optionlist"  value="karatachi">Karatachi</li>
-                          <li class="optionlist"  value="hidden grass village">Hidden Grass Village</li>
-                          <li class="optionlist"  value="hidden rain village">Hidden Rain Village</li>
-                          <li class="optionlist"  value="hidden waterfall village">Hidden Waterfall Village</li>
-                          <li class="optionlist"  value="land of earth">Land Of Earth</li>
-                          <li class="optionlist"  value="land of fire">Land Of Fire</li>
-                          <li class="optionlist"  value="land of hot water">Land Of Hot Water</li>
-                          <li class="optionlist"  value="land of lightning">Land Of Lightning</li>
-                          <li class="optionlist"  value="land of sound">Land Of Sound</li>
-                          <li class="optionlist"  value="land of water">Land Of Water</li>
-                          <li class="optionlist"  value="land of wind">Land Of Wind</li>
-                          <li class="optionlist"  value="shinobi world map">Shinobi World Map</li>
-                      </div>
-                      </div>
+                     <iframe frameborder="0" scrolling="no" id="iframesearch" class="searchiframe" src="0search/searchM.html"></iframe>
+                      
 
 
                       <div id="searcherror">
@@ -326,6 +290,8 @@ scrollbar-width: 45px;     } */
         </div>
            </div>
            </div>
+
+           <script src="0cssJava/loaderDotAnimation.js"></script>
            <script>
 
 
